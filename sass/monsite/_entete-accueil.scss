@@ -1,0 +1,66 @@
+.site-header{background: rgba(0,0,0,0);
+              width: 100vw;
+              height: 10vh;
+              position:fixed;}
+
+.site-branding{
+                margin:0 auto;}
+
+.site-title{font-size: 8em;
+            color: orange;}
+
+.site-title a:visited{color : green;}
+
+.site-title a:active{color : red;}
+
+.site-description{text-align:center;
+                    font-size: 4em;}
+
+.container a{text-decoration : none;
+              color: black;
+              margin: 0 5%;
+              
+              font-family: 'Roboto-Regular';
+
+            .ongletAnimAccueil{display:inline-block;
+                                border : 1px solid black;
+                                text-align: center;
+                                padding-top: 5em;
+                                padding-bottom: 0.5em;
+                                background: white;
+                                transform : translateY(-8vh);
+                                transform-origin: 100% 0%;
+                                transition : transform 0.5s;}
+
+            .ongletAnimAccueil:hover {
+                                  transform: translateY(0vh)
+                                }        
+            }
+            
+.cube::after{content: '';
+              display: inline-block;
+              border: 1px solid black;
+              width: 16px;
+              height: 7.1em;
+              transform: skewY(50deg);
+              position: absolute;
+              top: -12%;
+              left: -18px;
+              background: white;
+            }
+
+/////////////////////////////////////////////////////////Début media querries
+  @media screen and (min-width: 37.5em) {
+
+    .menu-toggle {
+      display: none;
+    }
+  
+    .main-navigation ul {
+      display: flex;
+      li{padding: 10px;
+          a{color:green;}
+          &:hover{background-color:black;}
+        }
+    }
+  }
