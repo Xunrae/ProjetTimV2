@@ -1,0 +1,98 @@
+#enteteGeneral {
+    background-color: pink;
+    color: red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+    align-content: stretch;
+}
+
+#enteteGeneral a {
+    max-width: 40%;
+    height:auto;
+}
+
+#enteteGeneral .logotim {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+#enteteGeneral .titreEntete {
+    font-family: 'Bruno Ace SC Regular'; 
+        src: url('../fonts/Bruno Ace SC Regular.ttf');
+    color: white;
+    font-weight: 100;
+    line-height: 90%;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+#menuBurger{
+    flex-grow: 3;
+    align-self: center;
+
+    #front {
+        display: block;
+        width: 50%;
+        
+        min-width: 100px;
+        height: 50px;
+        
+        background-color: rgba($color: #ffffff, $alpha: 0);
+        
+        padding-bottom: 0;
+
+        transition: padding-bottom 0.5s;
+    }
+
+    #back {
+        display: block;
+        width: 50%;
+        min-width: 100px;
+        height: 50px;
+        text-align: center;
+        background-color: rgba($color: #ffffff, $alpha: 0);
+    }
+
+    #front::before, #back::before {
+       
+        display: inline-block;
+        position: relative;
+        width: 10%;
+        height: 50px;
+        padding-left: 50%;
+        padding-right: 50%;
+
+        top: 50%;
+
+        background-color: white;
+        outline: black solid 4px;
+        transition: padding-bottom 0.5s;
+    }
+
+    #back::before {
+        content:'';
+    }
+
+    #front::before{
+        content:'Menu';
+        transform: translate(1em,-2.1em);
+    }
+
+    img{
+        position: relative;
+        left: 30px;
+    }
+}
+
+#menuBurger:hover #front::before, #menuBurger:hover #back::before {
+    padding-bottom: 600px;
+}
+
+#ligneSeparatrice {
+    height: 5px;
+}

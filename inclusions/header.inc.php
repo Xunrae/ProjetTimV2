@@ -6,19 +6,23 @@
         ],
         "cheminement"   =>  [
             "title" =>  "TIM - Cheminement",
-			"description" => "Cheminement scolaire au TIM"
+			"description" => "Cheminement scolaire au TIM",
+			"h2page" => "Cheminement"
 		],
 		"enseignants"   =>  [
             "title" =>  "TIM - Enseignants",
-			"description" => "Description des enseignants du TIM"
+			"description" => "Description des enseignants du TIM",
+			"h2page" => "Enseignants"
 		],
 		"projets"   =>  [
             "title" =>  "TIM - Projets",
-			"description" => "Projets des anciens étudiants du TIM"
+			"description" => "Projets des anciens étudiants du TIM",
+			"h2page" => "Projets"
 		],
 		"evenements"   =>  [
             "title" =>  "TIM - Évènements",
-			"description" => "Évènements au TIM"
+			"description" => "Évènements au TIM",
+			"h2page" => "Évènements"
 		]
     ];
 ?>
@@ -34,13 +38,27 @@
 	<meta name="author" content="Antoine Côté-L'Écuyer, Dalianne Gosselin, David Céré, Raphaël Jeudy, Sandrine Cryans"/>
 	<meta name="description" content ="<?= $headInfo[$page]["description"] ?>"/>
 
+	<!-- Si on est sur la page d'accueil les css sont -->
+<?php if($page=="index") : ?>
 	<link href="css/normalize.css"
 			type="text/css"
 			rel="stylesheet">
 
-	<link href="style.css"
+	<link href="css/style.css"
 			type="text/css"
 			rel="stylesheet">
+	<!-- Pour toutes les autres pages les css sont -->
+<?php else : ?>
+	
+	<link href="../css/normalize.css"
+			type="text/css"
+			rel="stylesheet">
+
+	<link href="../css/style.css"
+			type="text/css"
+			rel="stylesheet">
+
+<?php endif; ?>
 
 </head>
 
@@ -52,9 +70,9 @@
 		<div class="site-branding">
 			<?php
 
-			//si on est sur la page d'accueil
-			if ($page=="index") :
-				?>
+				//si on est sur la page d'accueil
+				if ($page=="index") :
+			?>
 
 				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Changer les textes en json ici !!!!!!!!!!!!!!!!!!!!!!!!-->
 				<div class='container'>
@@ -64,11 +82,30 @@
 					<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
 				</div>
 
-				<?php
-			//sur toutes les autres pages du site
-			else :
-				?>
-				<p class="site-title"><a href="../index.php" ?></a></p>
+			<?php
+				//sur toutes les autres pages du site
+				else :
+			?>
+					
+				<div id="enteteGeneral">
+
+					<a href="../index.php" rel="home">
+						<img class="logotim" src="../img/Logo3D.png" alt="Logo du TIM">
+					</a>
+
+					<h1 class="titreEntete">Technique<br>d'Intégration<br>Multimédia</h1>
+
+					<div id="menuBurger">
+						<div id="back"></div>
+						<div id="front"></div>
+					</div>
+				</div>
+
+				<div id="entetePage">
+					<hr class="ligneSeparatrice">
+					<h2><?= $headInfo[$page]["h2page"]?></h2>
+				</div>
+
 				<?php
 			endif;
 				?>
