@@ -103,7 +103,8 @@
 
 				<div id="entetePage">
 					<hr class="ligneSeparatrice">
-					<h2><?= $headInfo[$page]["h2page"]?></h2>
+					<h2 class="titrePage"><?= $headInfo[$page]["h2page"]?></h2>
+					<hr class="ligneSeparatrice">
 				</div>
 
 				<?php
