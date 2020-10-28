@@ -17,11 +17,11 @@
 <canvas></canvas>
 
 <div class="accueilMain">
-			<img class="logotim" src="img/Logo3D.png" alt="Logo du TIM">
+	<img class="logotim" src="img/Logo3D.png" alt="Logo du TIM">
 
-			<!-- Mettre en json ici!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-			<h1 class="titreTimAccueil">Technique d'Intégration Multimédia<br>au Collège de Maisonneuve</h1>
-		</div>
+	<!-- Mettre en json ici!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+	<h1 class="titreTimAccueil">Technique d'Intégration Multimédia<br>au Collège de Maisonneuve</h1>
+</div>
 
 
 <?php

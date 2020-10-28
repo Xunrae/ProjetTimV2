@@ -1,6 +1,6 @@
 <footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<div class="container">
+	<div class="site-info">
+		<div class="container">
 			<?php 
 				if($page=="index") :
 			?>
@@ -28,10 +28,9 @@
 			<?php 
 				endif;
 			?>
-			
-			</div>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+		</div>
+	</div><!-- .site-info -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 			<?php if($page=="index") : ?> <script src="js/fluidSimulation.js"></script> <?php endif;?>

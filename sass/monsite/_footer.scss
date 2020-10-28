@@ -1,13 +1,21 @@
-#colophon div div{ 
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#colophon div div { 
     margin: 0 auto;
     width: 210px !important;
+
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+  
     a{
-    
-    img{
-    width: fit-content;
-    height: fit-content;
-}}}
+      img{
+      width: fit-content;
+      height: fit-content;}
+    }
+}
