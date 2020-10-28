@@ -29,7 +29,7 @@ SOFTWARE.
 
 const canvas = document.getElementsByTagName('canvas')[0];
 const page = document.getElementById('page');
-const logo = document.getElementById('accueilMain');
+const logo = document.getElementById('logodutim');
 resizeCanvas();
 
 let config = {
@@ -1465,6 +1465,25 @@ page.addEventListener('mouseover', e => {
         pointer = new pointerPrototype();
     updatePointerDownData(pointer, -1, posX, posY);
 });
+
+logo.addEventListener('mousemove', e => {
+    let posX = scaleByPixelRatio(e.offsetX);
+    let posY = scaleByPixelRatio(e.offsetY);
+    let pointer = pointers.find(p => p.id == -1);
+    if (pointer == null)
+        pointer = new pointerPrototype();
+    updatePointerDownData(pointer, -1, posX, posY);
+});
+
+
+
+// canvas.addEventListener('mousemove', e => {
+//     let pointer = pointers[0];
+//     if (!pointer.down) return;
+//     let posX = scaleByPixelRatio(e.offsetX);
+//     let posY = scaleByPixelRatio(e.offsetY);
+//     updatePointerMoveData(pointer, posX, posY);
+// });
 
 page.addEventListener('mousemove', e => {
     let pointer = pointers[0];
