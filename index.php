@@ -16,7 +16,7 @@
 
 <canvas></canvas>
 
-<div class="accueilMain">
+<div class="accueilMain" id="accueilMain">
 	<img class="logotim" src="img/Logo3D.png" alt="Logo du TIM">
 
 	<!-- Mettre en json ici!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
