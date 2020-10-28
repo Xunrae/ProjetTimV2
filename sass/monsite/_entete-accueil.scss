@@ -16,7 +16,8 @@
 .site-description{text-align:center;
                     font-size: 4em;}
 
-.container a{text-decoration : none;
+.container{
+            a{text-decoration : none;
               color: black;
               margin: 0 5%;
               
@@ -36,6 +37,7 @@
                                   transform: translateY(0vh)
                                 }        
             }
+}
             
 .cube::after{content: '';
               display: inline-block;
