@@ -1,4 +1,5 @@
-#page {
+
+#page{
     width: 100vw;
     height: 100vh;
 }
@@ -6,16 +7,19 @@
 .accueilMain {
     margin: 0 auto;
     width: fit-content;
+
     padding: 20vh 0 0 0;
+
 }
 
 .logotim {
     padding-right: 100px;
+    
 }
 
 .titreTimAccueil {
     font-family: 'Bruno Ace SC Regular'; 
-        src: url('../fonts/Bruno Ace SC Regular.ttf');
+    src: url('../fonts/Bruno Ace SC Regular.ttf');
     text-align: center;
     font-size: 1.5em;
     height: fit-content;

@@ -5,25 +5,25 @@
 				if($page=="index") :
 			?>
 				<a class="col-1" href="https://www.facebook.com/maisonneuvetim">
-					<img src="img/faceb.png" alt="logoFacebook">
+					<img src="img/logoFb.png" alt="logoFacebook">
 				</a>
 				<a class="col-1" href="https://www.instagram.com/maisonneuvetim/">
-					<img src="img/insta.png" alt="logoInstagram">
+					<img src="img/logoInsta.png" alt="logoInstagram">
 				</a>
 				<a class="col-1" href="https://twitter.com/cdemaisonneuve?lang=fr">
-					<img src="img/twit.png" alt="logoTwitter">
+					<img src="img/logoTwi.png" alt="logoTwitter">
 				</a>
 			<?php 
 				else :
 			?>
 				<a class="col-1" href="https://www.facebook.com/maisonneuvetim">
-					<img src="../img/faceb.png" alt="logoFacebook">
+					<img src="../img/logoFb.png" alt="logoFacebook">
 				</a>
 				<a class="col-1" href="https://www.instagram.com/maisonneuvetim/">
-					<img src="../img/insta.png" alt="logoInstagram">
+					<img src="../img/logoInsta.png" alt="logoInstagram">
 				</a>
 				<a class="col-1" href="https://twitter.com/cdemaisonneuve?lang=fr">
-					<img src="../img/twit.png" alt="logoTwitter">
+					<img src="../img/logoTwi.png" alt="logoTwitter">
 				</a>
 			<?php 
 				endif;
