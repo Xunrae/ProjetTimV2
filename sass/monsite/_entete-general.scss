@@ -37,67 +37,55 @@
     flex-grow: 1;
 }
 
-#menuBurger{
-    flex-grow: 3;
+#menuBurger{ 
+    width: 120px;
+    
     align-self: center;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    background-color: white;
+    outline: #000000 solid 3px;
+
     #front {
-        display: block;
-        width: 50%;
         
-        min-width: 100px;
-        height: 50px;
-        
+        padding: 1em;
+        width: 120px;
         background-color: rgba($color: #ffffff, $alpha: 0);
-        
-        padding-bottom: 0;
+    
+        img{
+            width: 24px;
+            
+        }
 
-        transition: padding-bottom 0.5s;
+        div{
+            display: inline;
+            
+            margin-left: 15px;
+            width: 30px;
+        }
     }
 
-    #back {
-        display: block;
-        width: 50%;
-        min-width: 100px;
-        height: 50px;
-        text-align: center;
-        background-color: rgba($color: #ffffff, $alpha: 0);
-    }
 
-    #front::before, #back::before {
-       
-        display: inline-block;
-        position: relative;
-        width: 10%;
-        height: 50px;
-        padding-left: 50%;
-        padding-right: 50%;
-
-        top: 50%;
-
-        background-color: white;
-        outline: #0052AF solid 1px;
-        transition: padding-bottom 0.5s;
-    }
-
-    #back::before {
-        content:'';
-    }
-
-    #front::before{
-        content:'Menu';
-        transform: translate(1em,-2.1em);
-    }
-
-    img{
-        position: relative;
-        left: 30px;
-    }
+    
 }
 
-#menuBurger:hover #front::before, #menuBurger:hover #back::before {
-    padding-bottom: 600px;
+
+#menuBurger::after{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 70px;
+    border: black solid 3px;
+    position: absolute;
+    
+    
+    transform: skewY(50deg) translate(50px,0px);
+    background-color: white;
 }
+
 
 .ligneSeparatrice {
     border: 4px solid white;
@@ -124,6 +112,10 @@
         font-size: 5vw;
         padding: 0 75px;
     }    
+
+    #menuBurger{
+        margin-left: 300px;
+    }
 }
 
 // Desktop
@@ -148,4 +140,5 @@
         font-size: 5vw;
         padding: 0 175px;
     }    
+    
 }

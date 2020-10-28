@@ -96,9 +96,12 @@
 					<h1 class="titreEntete">Technique<br>d'Intégration<br>Multimédia</h1>
 
 					<div id="menuBurger">
-						<div id="back"></div>
-						<div id="front"></div>
+						<div id="front">
+						<img src="../img/boutonBurger.png" alt="Bouton Burger"/>
+						<div>Menu</div>
+						</div>
 					</div>
+					<div id="back"></div>
 				</div>
 
 				<div id="entetePage">
