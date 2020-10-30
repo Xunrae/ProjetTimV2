@@ -94,14 +94,51 @@
 					</a>
 
 					<h1 class="titreEntete">Technique<br>d'Intégration<br>Multimédia</h1>
-
-					<div id="menuBurger">
-						<div id="front">
-						<img src="../img/boutonBurger.png" alt="Bouton Burger"/>
-						<div>Menu</div>
+					<div id="boiteABurger">
+						<div id="menuBurger">
+							<div id="front">
+							<img src="../img/boutonBurger.png" alt="Bouton Burger"/>
+							<div>Menu
+								<ul>
+									<?php 
+									
+									switch ($page) {
+										case 'cheminement':
+											echo(
+											"<li><a href='enseignants.php'>Enseignants</a></li>
+											<li><a href='projets.php'>Projets</a></li>
+											<li><a href='evenements.php'>Évènements</a></li>");
+											break;
+										case 'enseignants':
+											echo(
+											"<li><a href='cheminement.php'>Cheminement</a></li>
+											<li><a href='projets.php'>Projets</a></li>
+											<li><a href='evenements.php'>Évènements</a></li>");
+											break;
+										case 'evenements':
+											echo(
+											"<li><a href='cheminement.php'>Cheminement</a></li>
+											<li><a href='enseignants.php'>Enseignants</a></li>
+											<li><a href='projets.php'>Projets</a></li>");
+											break;
+										case 'projets':
+											echo(
+											"<li><a href='cheminement.php'>Cheminement</a></li>
+											<li><a href='enseignants.php'>Enseignants</a></li>
+											<li><a href='evenements.php'>Évènements</a></li>");
+											break;
+										
+										default:
+											# code...
+											break;
+									}
+									?>
+									
+								</ul>
+							</div>
+							</div>
 						</div>
 					</div>
-					<div id="back"></div>
 				</div>
 
 				<div id="entetePage">
