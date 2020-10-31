@@ -66,20 +66,23 @@
 
 <div id="page" class="site">
 
-	<header class="site-header">
+	<header class="<?= $page=="index"?'site-header-main':'site-header-general'?>">
 		<div class="site-branding">
 			<?php
 
 				//si on est sur la page d'accueil
 				if ($page=="index") :
-			?>
 
+			?>
+				<script>
+					
+				</script>
 				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Changer les textes en json ici !!!!!!!!!!!!!!!!!!!!!!!!-->
 				<div class='container'>
 					<a href="sites/cheminement.php"><div class="ongletAnimAccueil cube col-2">Cheminement</div></a>
 					<a href="sites/enseignants.php"><div class="ongletAnimAccueil cube col-2">Enseignants</div></a>
-					<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
-					<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
+					<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
+					<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
 				</div>
 
 			<?php
@@ -134,6 +137,7 @@
 									}
 									?>
 									
+							
 								</ul>
 							</div>
 							</div>
