@@ -1,3 +1,7 @@
+fetch('../json/Cheminement.json')
+.then(response => response.json())
+.then(data => console.log(data));
+
 let cours = document.getElementsByClassName("rond");
 
 nodes = Array.prototype.slice.call(cours,0);
@@ -11,5 +15,5 @@ function ouvrirFenetre(){
     console.log("it werks");
     let div =  document.createElement("div");
     let para = document.createElement("p");
-    let contenu = document.createTextNode('<?= $fichier?>');
+    let contenu = document.createTextNode(data);
 }
