@@ -66,20 +66,23 @@
 
 <div id="page" class="site">
 
-	<header class="site-header">
+	<header class="<?= $page=="index"?'site-header-main':'site-header-general'?>">
 		<div class="site-branding">
 			<?php
 
 				//si on est sur la page d'accueil
 				if ($page=="index") :
-			?>
 
+			?>
+				<script>
+					
+				</script>
 				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Changer les textes en json ici !!!!!!!!!!!!!!!!!!!!!!!!-->
 				<div class='container'>
 					<a href="sites/cheminement.php"><div class="ongletAnimAccueil cube col-2">Cheminement</div></a>
 					<a href="sites/enseignants.php"><div class="ongletAnimAccueil cube col-2">Enseignants</div></a>
-					<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
-					<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
+					<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
+					<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
 				</div>
 
 			<?php
@@ -94,10 +97,51 @@
 					</a>
 
 					<h1 class="titreEntete">Technique<br>d'Intégration<br>Multimédia</h1>
-
-					<div id="menuBurger">
-						<div id="back"></div>
-						<div id="front"></div>
+					<div id="boiteABurger">
+						<div id="menuBurger">
+							<div id="front">
+							<img src="../img/boutonBurger.png" alt="Bouton Burger"/>
+							<div>Menu
+								<ul>
+									<?php 
+									
+									switch ($page) {
+										case 'cheminement':
+											echo(
+											"<li><a href='enseignants.php'>Enseignants</a></li>
+											<li><a href='projets.php'>Projets</a></li>
+											<li><a href='evenements.php'>Évènements</a></li>");
+											break;
+										case 'enseignants':
+											echo(
+											"<li><a href='cheminement.php'>Cheminement</a></li>
+											<li><a href='projets.php'>Projets</a></li>
+											<li><a href='evenements.php'>Évènements</a></li>");
+											break;
+										case 'evenements':
+											echo(
+											"<li><a href='cheminement.php'>Cheminement</a></li>
+											<li><a href='enseignants.php'>Enseignants</a></li>
+											<li><a href='projets.php'>Projets</a></li>");
+											break;
+										case 'projets':
+											echo(
+											"<li><a href='cheminement.php'>Cheminement</a></li>
+											<li><a href='enseignants.php'>Enseignants</a></li>
+											<li><a href='evenements.php'>Évènements</a></li>");
+											break;
+										
+										default:
+											# code...
+											break;
+									}
+									?>
+									
+							
+								</ul>
+							</div>
+							</div>
+						</div>
 					</div>
 				</div>
 

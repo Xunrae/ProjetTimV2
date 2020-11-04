@@ -1,5 +1,16 @@
+.cheminementrond{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: block;
+    padding-top: 35vh;
+    margin: 0 auto;
+    padding-left: 18vh;
+  
+}
+
+
 .rond{
-    width:200px;
+    width: 200px;
     height: 200px;
     border-radius: 100%;
     align-content: center;
@@ -21,17 +32,7 @@
     
     }
 }
-.entry-content{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    margin: 0 auto;
-}
+
 body{
     background :#151242;
-}
-.entry-title{
-    color: white;
-}
-p{
-    color:white;
 }
