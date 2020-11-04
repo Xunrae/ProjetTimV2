@@ -1,5 +1,5 @@
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -7,11 +7,6 @@ footer {
 #colophon div div { 
     margin: 0 auto;
     width: 210px !important;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
   
     a{
       img{

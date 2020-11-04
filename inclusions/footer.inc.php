@@ -33,6 +33,10 @@
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
-			<?php if($page=="index") : ?> <script src="js/fluidSimulation.js"></script> <?php endif;?>
+			<?php if($page=="index") : ?> 
+				<script src="js/fluidSimulation.js"></script>
+			<?php elseif($page=="cheminement") : ?>
+				<script src="../js/interactionPastilles.js"></script>
+			<?php endif;?>
 </body>
 </html>
