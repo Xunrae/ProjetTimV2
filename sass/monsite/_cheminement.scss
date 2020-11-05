@@ -2,9 +2,9 @@
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     display: block;
-    padding-top: 35vh;
     margin: 0 auto;
     padding-left: 18vh;
+    &:first-child{padding-top: 35vh;}
   
 }
 
@@ -32,6 +32,12 @@
     
     }
 }
+
+#descriptionCours{position:fixed;
+                    top: 20%;
+                    left: 10%;
+                    width: 80%;
+                    background: rgba(255,255,255, 0.9)}
 
 body{
     background :#151242;
