@@ -37,7 +37,22 @@
                     top: 20%;
                     left: 10%;
                     width: 80%;
-                    background: rgba(255,255,255, 0.9)}
+                    padding: 30px;
+                    background: rgba(255,255,255, 0.9);
+                    
+                    span{position: absolute;
+                         top:20px;
+                         right: 30px;
+                         height: 30px;
+                         width:30px; 
+                         border-radius: 15px;
+                         font-size : 1.25em;
+                         text-align:center;
+                         cursor: pointer;
+                         background: black;
+                         color: white;
+                    }
+                }
 
 body{
     background :#151242;
