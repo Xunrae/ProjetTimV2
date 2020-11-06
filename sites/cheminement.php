@@ -18,7 +18,9 @@
 
 		<?php foreach($session as $unCours){
 			?>
-			<button class="rond" data-session="<?= $noSession?>"><p><?= $unCours["NomCours"]?></p></button>
+			<button class="rond" data-session="<?= $noSession?>">
+				<p data-session="<?= $noSession?>"><?= $unCours["NomCours"]?></p>
+			</button>
 		<?php }?>
 		<hr>
 	</div>
