@@ -1,20 +1,17 @@
 
 section{
-    width: 90%;
+    width: 80%;
 
-    margin: 0 auto;
-    margin-top: 1em;
+    margin: 4em auto;
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
     row-gap: 2em;
-    column-gap: 1.5em;
-    
-    //background-color: rgb(236, 236, 28);
+    column-gap: 2.5em;
+
     line-height: 0;
-    
     
 }
 
@@ -56,14 +53,28 @@ section{
 
 .projet::before{
     content: "";
-    width: 70%;
-    height: 70%;
+    width: 1rem;
+    height: 45vw;
     background-color: white;
+    border: black solid 4px;
 
     position: absolute;
     z-index: -1;
 
-    transform: translate(-30px,-30px);
+    transform: translate(-27px,-14px) skewY(40deg);
+}
+
+.projet::after{
+    content: "";
+    width: 51vw;
+    height: 2.5%;
+    background-color: white;
+    border: black solid 4px;
+
+    position: absolute;
+    z-index: -1;
+
+    transform: translate(-129.5%,-98%) rotate(-50deg) skewY(50deg);
 }
 
 
@@ -73,5 +84,31 @@ section{
 
     section{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .projet::before{
+        content: "";
+        width: 1rem;
+        height: 21.9vw;
+        background-color: white;
+        border: black solid 4px;
+    
+        position: absolute;
+        z-index: -1;
+    
+        transform: translate(-27px,-14px) skewY(40deg);
+    }
+
+    .projet::after{
+        content: "";
+        width: 24.8vw;
+        height: 2.5%;
+        background-color: white;
+        border: black solid 4px;
+    
+        position: absolute;
+        z-index: -1;
+    
+        transform: translate(-129.5%,-98%) rotate(-50deg) skewY(50deg);
     }
 }
