@@ -57,15 +57,9 @@ function ouvrirFenetre(){
     let para = document.createElement("p");
     let photo = document.createElement("img");
 
-<<<<<<< Updated upstream
     photo.setAttribute("src",arrayData[noProf][1].Photo);
     photo.setAttribute("alt","Photo de "+arrayData[noProf][1].Nom);
     
-=======
-    photo.setAttribute("src", "../img/profs/"+arrayData[noProf][1].Photo);
-    photo.setAttribute("alt",)
-
->>>>>>> Stashed changes
     //va chercher la description du cours dans le contenu json
     let contenu = document.createTextNode(arrayData[noProf][1].Description);
 
