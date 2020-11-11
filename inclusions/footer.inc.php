@@ -37,7 +37,8 @@
 				<script src="js/fluidSimulation.js"></script>
 			<?php elseif($page=="cheminement") : ?>
 				<script src="../js/interactionPastilles.js"></script>
-				<!--<script src="../js/scroll.js"></script>-->
+			<?php elseif($page=="projets") : ?>
+				<script src="../js/interactionProjets.js"></script>
 			<?php endif;?>
 </body>
 </html>
