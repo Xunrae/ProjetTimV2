@@ -8,7 +8,7 @@ function convertirJson(d){
 }
 
 let cours = document.getElementsByClassName("rond");
-nodes = Array.prototype.slice.call(cours,0);
+let nodes = Array.prototype.slice.call(cours,0);
 addEventListenerList(nodes,'click', ouvrirFenetre);
 
 function ajoutListener(){
@@ -56,9 +56,25 @@ function ouvrirFenetre(){
     div.setAttribute("id","descriptionCours");
     //paragraphe pour div
     let para = document.createElement("p");
+    //paragraphe nombre d'heures du cours;
+    let heures = document.createElement("p");
+    //paragraphe nombre d'unités du cours
+    let NbUnites = document.createElement("p");
+    //paragraphe pondération du cours
+    let ponderation = document.createElement("p");
+    //paraggraphe prealables du cours
+    let prealables = document.createElement("p");
   
     //va chercher la description du cours dans le contenu json
     let contenu = document.createTextNode(arrayData[noSession][1][codeTarget].Description);
+    //va chercher la durée du cours
+    let contenuHeures = document.createTextNode("Durée du cours : "+arrayData[noSession][1][codeTarget].Heures);
+    //va chercher le nombre d'unités du cours
+    let contenuUnites = document.createTextNode("Nombre d'unités : "+arrayData[noSession][1][codeTarget].Nbunite);
+    //va chercher la pondération dans le json
+    let contenuPonderation = document.createTextNode("Pondération : "+arrayData[noSession][1][codeTarget].Pondération);
+    //va chercher les préalables dans le json
+    let contenuPrealables = document.createTextNode("Préalables : "+arrayData[noSession][1][codeTarget].Prealable);
 
     //crée un span pour fermer la fenêtre
     let fermeture = document.createElement("span");
@@ -67,7 +83,15 @@ function ouvrirFenetre(){
 
     //associe elements assemblés
     para.appendChild(contenu);
+    heures.appendChild(contenuHeures);
+    ponderation.appendChild(contenuPonderation);
+    NbUnites.appendChild(contenuUnites);
+    prealables.appendChild(contenuPrealables);
     div.appendChild(para);
+    div.appendChild(heures);
+    div.appendChild(ponderation);
+    div.appendChild(NbUnites);
+    div.appendChild(prealables);
     div.appendChild(fermeture);
     laPage.appendChild(div);
 }
