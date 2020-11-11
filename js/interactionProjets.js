@@ -2,10 +2,7 @@
 let projets = document.getElementsByClassName("projet");
 let descriptions = document.getElementsByClassName("description");
 
-console.log(projets,descriptions);
 
-
-descriptions[0].style.animationDuration = "1s";
 let animationDurationNum = descriptions[0].style.animationDuration;
 
 
@@ -23,17 +20,18 @@ function montrerDescription(evt) {
 
     if (classeAnim == null) {
         evt.target.classList.add("fade-in");
-        setTimeout(() => evt.target.style.animationPlayState = "paused", 500);
+        setTimeout(() => evt.target.style.animationPlayState = "paused", 1000);
+
+        return;
     }
 
-    
-    //console.log(parseFloat(descriptions[0].style.animationDuration));
-    console.log(evt.target.classList);
     
 
     if (evt.target.style.animationPlayState == "running") {
         //Jouer lanimation keyframe de fade-in
-        setTimeout(() => evt.target.style.animationPlayState = "paused", 500);
+        setTimeout(() => evt.target.style.animationPlayState = "paused", 1000);
+
+        return;
        
 
     }
@@ -41,12 +39,10 @@ function montrerDescription(evt) {
     if (evt.target.style.animationPlayState == "paused") {
         //Jouer lanimation keyframe de fade-out
         evt.target.style.animationPlayState = "running";
-        //setTimeout(() => descriptions[0].style.animationPlayState = "paused", 500);
+        setTimeout(() => evt.target.style.animationPlayState = "paused", 1000);
+
+        return;
     }
-
-   
-
-    console.log(classeAnim);
 
     
     
