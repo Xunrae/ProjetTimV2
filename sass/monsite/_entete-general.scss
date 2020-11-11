@@ -6,6 +6,7 @@
 	justify-content: flex-start;
 	align-items: flex-end;
     align-content: stretch;
+    z-index: 1;
 }
 
 #enteteGeneral a {
@@ -13,6 +14,7 @@
     margin: 0;
     max-width: 30%;
     height:auto;
+    z-index: 1;
 }
 
 #enteteGeneral .logotim {
@@ -23,6 +25,7 @@
     height: auto;
     width: auto;
     width: auto\9; //réajuste la section pour internet explorer
+    z-index: 1;
 }
 
 #enteteGeneral .titreEntete {
@@ -35,6 +38,7 @@
     padding: 0 0 7px 10px;
     margin: 0;
     flex-grow: 1;
+    z-index: 1;
 }
 
 #boiteABurger{
@@ -44,7 +48,7 @@
     height: 60px;
     padding-bottom: 0px;
     margin: 0;
-    
+    z-index: 1;
 }
 
 #menuBurger{ 
@@ -79,7 +83,6 @@
 
         div{
             display: inline;
-            
             margin-left: 15px;
             width: 30px;
 
@@ -132,6 +135,7 @@
 .ligneSeparatrice {
     border: 4px solid white;
     margin: 0 50px;
+    z-index: 2;
 }
 
 .titrePage {
@@ -141,6 +145,7 @@
     font-size: 5vw;
     padding: 0 10vw;
     margin: 0;
+    z-index: 2;
 }
 
 /////////////////////////////////////////////////////////Début media querries

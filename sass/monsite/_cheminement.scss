@@ -1,13 +1,15 @@
+html{
+  height: 100%;
+}
 .cheminementrond{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     display: block;
     margin: 0 auto;
     padding-left: 18vh;
+    z-index: 1;
     &:first-child{padding-top: 35vh;}
-  
 }
-
 
 .rond{
     width: 200px;
@@ -27,12 +29,32 @@
         position: absolute;
         border-radius: 100%;
         z-index: -1;
-       
-
-    
     }
 }
 
+
+#triangle{
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+  0%   {top: 100px; left: -1000px; fill: red;}
+  100% {top: 0px; left: 120%; fill: green;}
+}
+body {
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EC2F29),to(#F0B72C)) fixed;
+  //background: linear-gradient(0deg, #F0B72C 0%, #EC2F29 51%, #00527F 75%);
+  z-index: -2;
+  
 #descriptionCours{position:fixed;
                     top: 20%;
                     left: 10%;
@@ -54,6 +76,4 @@
                     }
                 }
 
-body{
-    background :#151242;
 }
