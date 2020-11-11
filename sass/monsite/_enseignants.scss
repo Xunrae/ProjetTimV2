@@ -1,0 +1,41 @@
+#descriptionProf{position:fixed;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    padding: 30px;
+    background: rgba(255,255,255, 0.9);
+    
+    span{position: absolute;
+         top:20px;
+         right: 30px;
+         height: 30px;
+         width:30px; 
+         border-radius: 15px;
+         font-size : 1.25em;
+         text-align:center;
+         cursor: pointer;
+         background: black;
+         color: white;
+    }
+}
+
+#divCreatif{width:49%;
+            float:left;
+        }
+
+#divLogique{width:49%;
+            float:right;
+            border-left: 10px solid white;}
+
+.boutonProf{background: url("../img/polygoneProf.png");
+            width:221px;
+            height:208px;
+            border: none;
+            display:block;
+            margin-left: 5%;
+            margin-top: 2em;
+
+            &:nth-child(odd){
+                margin-left: 50%;
+            }
+    }

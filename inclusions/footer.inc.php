@@ -39,6 +39,8 @@
 				<script src="../js/interactionPastilles.js"></script>
 			<?php elseif($page=="projets") : ?>
 				<script src="../js/interactionProjets.js"></script>
+			<?php elseif($page=="enseignants") : ?>
+				<script src="../js/interactionProfs.js"></script>
 			<?php endif;?>
 </body>
 </html>
