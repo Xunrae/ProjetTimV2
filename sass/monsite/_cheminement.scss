@@ -5,10 +5,10 @@ html{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     display: block;
-    padding-top: 35vh;
     margin: 0 auto;
     padding-left: 18vh;
     z-index: 1;
+    &:first-child{padding-top: 35vh;}
 }
 
 .rond{
@@ -54,4 +54,26 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#EC2F29),to(#F0B72C)) fixed;
   //background: linear-gradient(0deg, #F0B72C 0%, #EC2F29 51%, #00527F 75%);
   z-index: -2;
+  
+#descriptionCours{position:fixed;
+                    top: 20%;
+                    left: 10%;
+                    width: 80%;
+                    padding: 30px;
+                    background: rgba(255,255,255, 0.9);
+                    
+                    span{position: absolute;
+                         top:20px;
+                         right: 30px;
+                         height: 30px;
+                         width:30px; 
+                         border-radius: 15px;
+                         font-size : 1.25em;
+                         text-align:center;
+                         cursor: pointer;
+                         background: black;
+                         color: white;
+                    }
+                }
+
 }
