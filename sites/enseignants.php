@@ -10,6 +10,7 @@
 ?>
 
 	<div id="divCreatif">
+		<h2>Créatifs</h2>
 		<?php 
 		foreach($tousProfs as $unProf){
 			if($unProf["Type"] == "Créatif"):
@@ -26,6 +27,7 @@
 	</div>
 
 	<div id="divLogique">
+		<h2>Logiques</h2>
 		<?php 
 			foreach($tousProfs as $unProf){
 				if($unProf["Type"] == "Logique"):
