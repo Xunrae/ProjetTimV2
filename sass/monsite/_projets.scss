@@ -1,20 +1,17 @@
 
 section{
-    width: 90%;
+    width: 80%;
 
-    margin: 0 auto;
-    margin-top: 1em;
+    margin: 4em auto;
 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
     row-gap: 2em;
-    column-gap: 1.5em;
-    
-    //background-color: rgb(236, 236, 28);
+    column-gap: 2.5em;
+
     line-height: 0;
-    
     
 }
 
@@ -40,6 +37,9 @@ section{
 
         font-size: 2.5vw;
 
+        //Empecher lutilisateur de cliquer sur le titre
+        pointer-events: none;
+
     }
 
     video, img{
@@ -51,20 +51,52 @@ section{
 
         z-index: 0;
     }
+
+    .description{
+        position: absolute;
+        height: 45vw;
+        width: 80vw;
+
+        
+        opacity: 0;
+        transform: translate(0%,-100%);
+        background-color: black;
+
+        p{
+            color: white;
+            overflow-wrap: break-word;
+        }
+    }
     
 }
 
 .projet::before{
     content: "";
-    width: 70%;
-    height: 70%;
+    width: 1rem;
+    height: 45vw;
     background-color: white;
+    border: black solid 4px;
 
     position: absolute;
     z-index: -1;
 
-    transform: translate(-30px,-30px);
+    transform: translate(-27px,-14px) skewY(40deg);
 }
+
+.projet::after{
+    content: "";
+    width: 51vw;
+    height: 2.5%;
+    background-color: white;
+    border: black solid 4px;
+
+    position: absolute;
+    z-index: -1;
+
+    transform: translate(-129.5%,-98%) rotate(-50deg) skewY(50deg);
+}
+
+
 
 
 
@@ -73,5 +105,57 @@ section{
 
     section{
         grid-template-columns: 1fr 1fr;
+    }
+
+   .projet .description{
+    height: 22vw;
+    width: 39vw;
+   }
+
+    .projet::before{
+        content: "";
+        width: 1rem;
+        height: 21.9vw;
+        background-color: white;
+        border: black solid 4px;
+    
+        position: absolute;
+        z-index: -1;
+    
+        transform: translate(-27px,-14px) skewY(40deg);
+    }
+
+    .projet::after{
+        content: "";
+        width: 24.8vw;
+        height: 2.5%;
+        background-color: white;
+        border: black solid 4px;
+    
+        position: absolute;
+        z-index: -1;
+    
+        transform: translate(-129.5%,-98%) rotate(-50deg) skewY(50deg);
+    }
+}
+
+//Animations keyframes
+.fade-in{
+    animation: fadeIn 1s infinite alternate;
+    
+}
+
+.fade-out{
+    animation: fadeIn 1s reverse forwards;
+    
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 0.75;
     }
 }
