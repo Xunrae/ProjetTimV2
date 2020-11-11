@@ -57,6 +57,7 @@ section{
         position: absolute;
         height: 45vw;
         width: 80vw;
+        
 
         
         opacity: 0;
@@ -68,8 +69,14 @@ section{
             overflow-wrap: break-word;
             //Vertical, horizontal
             margin: 10% 5%;
+            pointer-events: none;
+            
         }
     }
+    
+}
+
+video:hover{
     
 }
 
@@ -164,6 +171,6 @@ section{
     }
 
     to{
-        opacity: 0.75;
+        opacity: 0.90;
     }
 }
