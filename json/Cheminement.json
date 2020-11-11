@@ -44,7 +44,7 @@
             "Heures":90,
             "Nbunite":3,
             "Pondération":"3-3-3",
-            "Prealable":"Préalable relatif : Conception graphique et imagerie matricielle"
+            "Prealable":"Conception graphique et imagerie matricielle"
            
         },
         "582-2W2": {
@@ -53,7 +53,7 @@
             "Heures":75,
             "Nbunite":2.67,
             "Pondération":"3-2-3",
-            "Prealable":"Préalable relatif : Mise en page Web"
+            "Prealable":"Mise en page Web"
         }
     },
 
@@ -65,7 +65,7 @@
             "Heures":75,
             "Nbunite":2.67,
             "Pondération":"3-2-3",
-            "Prealable":"Préalable relatif : Conception graphique et imagerie vectorielle"
+            "Prealable":"Conception graphique et imagerie vectorielle"
         },
         "582-3W3":{
             "NomCours": "582-3W3 Création de sites Web dynamiques",
@@ -73,7 +73,7 @@
             "Heures":90,
             "Nbunite":3,
             "Pondération":"3-3-3",
-            "Prealable":"Préalable relatif : Animation et interactivité Web"
+            "Prealable":"Animation et interactivité Web"
         },
         "582-3J3":{
             "NomCours": "582-3J3 Création de jeu 3D (75h)",
@@ -111,7 +111,7 @@
             "Heures":75,
             "Nbunite":2.33,
             "Pondération":"3-2-2",
-            "Prealable":"Préalable relatif : Création de sites Web dynamiques"
+            "Prealable":"Création de sites Web dynamiques"
         },
         "582-4MB":{
             "NomCours": "582-4MB Animation 3D",
@@ -119,7 +119,7 @@
             "Heures":75,
             "Nbunite":2.33,
             "Pondération":"3-2-2",
-            "Prealable":"Préalable relatif : Imagerie 3D"
+            "Prealable":"Imagerie 3D"
         }
     },
     
@@ -140,7 +140,7 @@
             "Heures":45,
             "Nbunite":1.33,
             "Pondération":"1-2-1",
-            "Prealable":"Préalable relatif : Projet Web en équipe"
+            "Prealable":"Projet Web en équipe"
         },
         
         "582-5W5":{
@@ -149,7 +149,7 @@
             "Heures":105,
             "Nbunite":4,
             "Pondération":"2-5-5",
-            "Prealable":"Préalable relatif : Conception d’interfaces,développement Web et Communication et dynamique d’une équipe de travail"
+            "Prealable":"Conception d’interfaces,développement Web et Communication et dynamique d’une équipe de travail"
         },
         "582-5MB":{
             "NomCours": "582-5MB Technologies émergentes et avancées – volet Création",
