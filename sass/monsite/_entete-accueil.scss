@@ -1,3 +1,11 @@
+.petit-ecran {
+  display: none;
+}
+
+.grand-ecran {
+  display: block;
+}
+
 .site-header-main{background: rgba(0,0,0,0);
               width: 100vw;
               height: 10vh;
@@ -26,7 +34,7 @@
 .container{
             a{text-decoration : none;
               color: black;
-              margin: 0 5%;
+              margin: 0 3%;
               
               font-family: 'Roboto-Regular';
 
@@ -59,17 +67,96 @@
             }
 
 /////////////////////////////////////////////////////////Début media querries
-@media screen and (min-width: 37.5em) {
-
-  .menu-toggle {
+// Téléphone
+@media screen and (max-width: 750px) {
+  .grand-ecran {
     display: none;
   }
-  
-  .main-navigation ul {
+
+  .petit-ecran {
+    display: block;
+  }
+
+  .petit-ecran #boiteABurger{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    
+    height: 60px;
+    padding-bottom: 0px;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .petit-ecran #menuBurger{ 
+    width: 120px;
+    height: 60px;
+    overflow: hidden;
+    
+    align-self: center;
     display: flex;
-    li{padding: 10px;
-        a{color:green;}
-        &:hover{background-color:black;}
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    background-color: white;
+    outline: #000000 solid 3px;
+    transition: height 1s;
+      
+
+    .petit-ecran #front {
+      margin-bottom: 20px;
+      padding: 1em;
+      width: 120px;
+      height: 50px;
+      background-color: rgba($color: #ffffff, $alpha: 0);
+  
+      img {
+        width: 24px;
+      }
+
+      div{
+        display: inline;
+        margin-left: 15px;
+        width: 30px;
+        ul {
+          padding: 0;
+          list-style-type: none;
+        }
+      }
     }
+  }
+
+  .petit-ecran #menuBurger:hover, .petit-ecran #menuBurger:hover::before{
+    height: 170px;
+  }
+
+  .petit-ecran #boiteABurger:hover{
+    height: 60px;
+  }
+
+  .petit-ecran #menuBurger::after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 115px;
+    border: black solid 3px;
+    position: absolute;
+    
+    
+    transform: translate(37px,-75px) rotate(90deg) skewY(-40deg) ;
+    background-color: white;
+  }
+
+  .petit-ecran #menuBurger::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 60px;
+    border: black solid 3px;
+    position: absolute;
+    
+    transition: height 1s;
+    transform: translate(-22px,-15px) skewY(50deg) ;
+    background-color: white;
   }
 }

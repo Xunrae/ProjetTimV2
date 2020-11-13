@@ -14,7 +14,6 @@
 
 .logotim {
     padding-right: 100px;
-    
 }
 
 .titreTimAccueil {
@@ -26,4 +25,18 @@
     color: white;
     margin: 0 auto;
     //margin-top: -15% !important;
+}
+
+/////////////////////////////////////////////////////////Début media querries
+// Téléphone
+@media screen and (max-width: 750px) {
+    .logotim {
+        max-width: 20em;
+        height: auto;    
+        padding: 0;
+    }
+
+    .titreTimAccueil {
+        font-size: 1em;
+    }    
 }
