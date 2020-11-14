@@ -78,10 +78,7 @@
 				if ($page=="index") :
 
 			?>
-				<script>
-					
-				</script>
-				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Changer les textes en json ici !!!!!!!!!!!!!!!!!!!!!!!!-->
+				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Changer les textes en php ici !!!!!!!!!!!!!!!!!!!!!!!!-->
 				
 				<div class="petit-ecran">
 					<div id="boiteABurger">
@@ -100,6 +97,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="grand-ecran">
 					<div class='container'>
 						<a href="sites/cheminement.php"><div class="ongletAnimAccueil cube col-2">Cheminement</div></a>
@@ -119,7 +117,7 @@
 						<img class="logotim" src="../img/Logo3D.png" alt="Logo du TIM">
 					</a>
 
-					<h1 class="titreEntete">Technique<br>d'Intégration<br>Multimédia</h1>
+					<h1 class="titreEntete">Techniques<br>d'intégration<br>multimédia</h1>
 					<div id="boiteABurger">
 						<div id="menuBurger">
 							<div id="front">
