@@ -4,25 +4,25 @@
 			<?php 
 				if($page=="index") :
 			?>
-				<a class="col-1" href="https://www.facebook.com/maisonneuvetim">
+				<a class="col-1" href="https://www.facebook.com/maisonneuvetim" target="blank">
 					<img src="img/logoFb.png" alt="logoFacebook">
 				</a>
-				<a class="col-1" href="https://www.instagram.com/maisonneuvetim/">
+				<a class="col-1" href="https://www.instagram.com/maisonneuvetim/" target="blank">
 					<img src="img/logoInsta.png" alt="logoInstagram">
 				</a>
-				<a class="col-1" href="https://twitter.com/cdemaisonneuve?lang=fr">
+				<a class="col-1" href="https://twitter.com/cdemaisonneuve?lang=fr" target="blank">
 					<img src="img/logoTwi.png" alt="logoTwitter">
 				</a>
 			<?php 
 				else :
 			?>
-				<a class="col-1" href="https://www.facebook.com/maisonneuvetim">
+				<a class="col-1" href="https://www.facebook.com/maisonneuvetim" target="blank">
 					<img src="../img/logoFb.png" alt="logoFacebook">
 				</a>
-				<a class="col-1" href="https://www.instagram.com/maisonneuvetim/">
+				<a class="col-1" href="https://www.instagram.com/maisonneuvetim/" target="blank">
 					<img src="../img/logoInsta.png" alt="logoInstagram">
 				</a>
-				<a class="col-1" href="https://twitter.com/cdemaisonneuve?lang=fr">
+				<a class="col-1" href="https://twitter.com/cdemaisonneuve?lang=fr" target="blank">
 					<img src="../img/logoTwi.png" alt="logoTwitter">
 				</a>
 			<?php 

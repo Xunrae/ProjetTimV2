@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'Bruno Ace SC Regular';
+    src: url('../fonts/Bruno Ace SC Regular.ttf');
+}
 
 #page{
     width: 100vw;
@@ -18,7 +22,6 @@
 
 .titreTimAccueil {
     font-family: 'Bruno Ace SC Regular'; 
-    src: url('../fonts/Bruno Ace SC Regular.ttf');
     text-align: center;
     font-size: 1.5em;
     height: fit-content;

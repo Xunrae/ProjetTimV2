@@ -58,6 +58,10 @@
 			type="text/css"
 			rel="stylesheet">
 
+	<!-- Link la police Roboto -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+
 <?php endif; ?>
 
 </head>
@@ -120,7 +124,7 @@
 						<div id="menuBurger">
 							<div id="front">
 							<img src="../img/boutonBurger.png" alt="Bouton Burger"/>
-							<div>Menu
+							<div>
 								<ul>
 									<?php 
 									

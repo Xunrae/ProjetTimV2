@@ -7,7 +7,7 @@
 		<video src="../videos/QuercusFootage.mp4" muted autoplay loop preload="auto" aria-placeholder="ajshfdkjah"></video>
 		<div class="description">
 			<h2>Quercus</h2>
-			<p>Réalisé par des étudiants de 3ème année, dans le cadre du cours de Développement de Jeu. Quercus est un jeu d'aventure où l'on joue une petite créature de la forêt devant se défendre contre slimes et araignées dans les bois. C'est un topdown shooter, très amusant avec une ambiance de FOUUUU </p>
+			<p>Réalisé par des étudiants de 3ème année, dans le cadre du cours de Développement de Jeu. Quercus est un jeu de type « Shoot'em up » disponible exclusivement sur la platforme  PC. Le but du jeu est de se rendre à une destination précise tout en tirant avec des armes sur les masses d'adversaires qui veulent la peau du héros. Des obstacles variés figurent dans les divers niveaux qui se démarquent chacun par leur ambiance et leur thématique. </p>
 		</div>
 	</div>
 	<div class="projet" title="Cliquez pour afficher la description">
