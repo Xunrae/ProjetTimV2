@@ -78,13 +78,32 @@
 					
 				</script>
 				<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Changer les textes en json ici !!!!!!!!!!!!!!!!!!!!!!!!-->
-				<div class='container'>
-					<a href="sites/cheminement.php"><div class="ongletAnimAccueil cube col-2">Cheminement</div></a>
-					<a href="sites/enseignants.php"><div class="ongletAnimAccueil cube col-2">Enseignants</div></a>
-					<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
-					<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
+				
+				<div class="petit-ecran">
+					<div id="boiteABurger">
+						<div id="menuBurger">
+							<div id="front">
+								<img src="img/boutonBurger.png" alt="Bouton Burger"/>
+								<div>Menu
+									<ul>
+										<li><a href='sites/cheminement.php'>Cheminement</a></li>
+										<li><a href='sites/enseignants.php'>Enseignants</a></li>
+										<li><a href='sites/projets.php'>Projets</a></li>
+										<li><a href='sites/evenements.php'>Évènements</a></li>								
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-
+				<div class="grand-ecran">
+					<div class='container'>
+						<a href="sites/cheminement.php"><div class="ongletAnimAccueil cube col-2">Cheminement</div></a>
+						<a href="sites/enseignants.php"><div class="ongletAnimAccueil cube col-2">Enseignants</div></a>
+						<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
+						<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
+					</div>
+				</div>
 			<?php
 				//sur toutes les autres pages du site
 				else :
@@ -108,25 +127,29 @@
 									switch ($page) {
 										case 'cheminement':
 											echo(
-											"<li><a href='enseignants.php'>Enseignants</a></li>
+											"<li><a href='../index.php'>Accueil</a></li>
+											<li><a href='enseignants.php'>Enseignants</a></li>
 											<li><a href='projets.php'>Projets</a></li>
 											<li><a href='evenements.php'>Évènements</a></li>");
 											break;
 										case 'enseignants':
 											echo(
-											"<li><a href='cheminement.php'>Cheminement</a></li>
+											"<li><a href='../index.php'>Accueil</a></li>
+											<li><a href='cheminement.php'>Cheminement</a></li>
 											<li><a href='projets.php'>Projets</a></li>
 											<li><a href='evenements.php'>Évènements</a></li>");
 											break;
 										case 'evenements':
 											echo(
-											"<li><a href='cheminement.php'>Cheminement</a></li>
+											"<li><a href='../index.php'>Accueil</a></li>
+											<li><a href='cheminement.php'>Cheminement</a></li>
 											<li><a href='enseignants.php'>Enseignants</a></li>
 											<li><a href='projets.php'>Projets</a></li>");
 											break;
 										case 'projets':
 											echo(
-											"<li><a href='cheminement.php'>Cheminement</a></li>
+											"<li><a href='../index.php'>Accueil</a></li>
+											<li><a href='cheminement.php'>Cheminement</a></li>
 											<li><a href='enseignants.php'>Enseignants</a></li>
 											<li><a href='evenements.php'>Évènements</a></li>");
 											break;
