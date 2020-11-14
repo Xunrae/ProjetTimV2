@@ -20,7 +20,7 @@
 	<img class="logotim" src="img/Logo3D.png" alt="Logo du TIM">
 
 	<!-- Mettre en json ici!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-	<h1 class="titreTimAccueil">Technique d'Intégration Multimédia<br>au Collège de Maisonneuve</h1>
+	<h1 class="titreTimAccueil">Techniques d'intégration multimédia<br>au Collège de Maisonneuve</h1>
 </div>
 
 
