@@ -36,8 +36,11 @@ function addEventListenerList(list, event, fn){
   *
   */ 
 function ouvrirFenetre(){
+    //s'il existe deja une description de cours affichée sur la page
     if(document.getElementById("descriptionCours")){
-        document.getElementById("descriptionCours").remove();
+        document.getElementById("descriptionCours").classList.remove("animOuverture");
+        document.getElementById("descriptionCours").classList.add("animFermeture");
+        setTimeout(() =>document.getElementById("descriptionCours").remove(), 500);
     }
 
     const laPage = document.getElementById("page");
@@ -54,6 +57,8 @@ function ouvrirFenetre(){
     //crée un div avec id pour css
     let div =  document.createElement("div");
     div.setAttribute("id","descriptionCours");
+    div.classList.add("animOuverture");
+
     //paragraphe pour div
     let para = document.createElement("p");
     //paragraphe nombre d'heures du cours;
@@ -98,5 +103,7 @@ function ouvrirFenetre(){
 
 //petite fonction qui détruit la fenetre créée dans ouvrirFenetre()
 function fermerFenetre(){
-    document.getElementById("descriptionCours").remove();
+    document.getElementById("descriptionCours").classList.remove("animOuverture");
+    document.getElementById("descriptionCours").classList.add("animFermeture");
+    window.setTimeout(() => document.getElementById("descriptionCours").remove(), 500);
 }
