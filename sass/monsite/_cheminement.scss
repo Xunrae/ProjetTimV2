@@ -46,6 +46,7 @@ html{
   0%   {top: 100px; left: -1000px; fill: red;}
   100% {top: 0px; left: 120%; fill: green;}
 }
+
 body {
   overflow-x: hidden;
   height: 100%;
@@ -75,6 +76,123 @@ body {
                          background: black;
                          color: white;
                     }
+
+                    &::after{content:"";
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            width: 5px;
+                            height:5px;
+                            border-radius: 3px;
+                            animation: animBorderDescriptAfter 5s infinite;
+                            }
+                    &::before{content:"";
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            width: 5px;
+                            height:5px;
+                            border-radius: 10px;
+                            animation: animBorderDescriptBefore 5s infinite;
+                            }
                 }
 
+}
+
+.animOuverture{animation: animDescription 0.5s forwards;}
+
+@keyframes animDescription{
+  from{transform: scale(0);}
+  to{transform: scale(1);}
+}
+
+.animFermeture{animation: animFermetureDescription 0.5s forwards;}
+
+@keyframes animFermetureDescription{
+  from{transform: scale(1);}
+  to{transform: scale(0);}
+}
+
+@keyframes animBorderDescriptAfter{
+  from{left:0%; 
+      top:0; 
+      transform: rotate(0deg); 
+      background-color: blue;}
+
+  20%{transform: rotate(0deg);
+    background-color: green;}
+  22%{transform: rotate(90deg);
+    background-color: black;}
+
+  25%{left:99.6%;
+      top:0;
+      background-color: yellow;}
+
+  45%{transform: rotate(90deg);
+    background-color: red;}
+  47%{transform: rotate(180deg);
+    background-color: black;}
+
+  50%{left:99.6%;
+      top:99%;
+      background-color: orange;}
+
+  70%{transform: rotate(180deg);
+    background-color: green;}
+  72%{transform: rotate(270deg);
+    background-color: purple;}
+
+  75%{left:0%;
+      top:99%;
+      background-color: black;}
+
+  97%{transform: rotate(270deg);
+    background-color: blue;}
+
+  to{left:0%;
+    top:0%;
+    transform: rotate(360deg);
+    background-color: blue;}
+}
+
+@keyframes animBorderDescriptBefore{
+  from{left:99.6%; 
+      top:99%; 
+      transform: rotate(0deg); 
+      background-color: blue;}
+
+  20%{transform: rotate(0deg);
+    background-color: green;}
+  22%{transform: rotate(90deg);
+    background-color: black;}
+
+  25%{left:0;
+      top:99%;
+      background-color: yellow;}
+
+  45%{transform: rotate(90deg);
+    background-color: red;}
+  47%{transform: rotate(180deg);
+    background-color: black;}
+
+  50%{left:0;
+      top:0%;
+      background-color: orange;}
+
+  70%{transform: rotate(180deg);
+    background-color: green;}
+  72%{transform: rotate(270deg);
+    background-color: purple;}
+
+  75%{left:99.6%;
+      top:0%;
+      background-color: black;}
+
+  97%{transform: rotate(270deg);
+    background-color: blue;}
+
+  to{left:99.6%;
+    top:99%;
+    transform: rotate(360deg);
+    background-color: blue;}
 }
