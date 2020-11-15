@@ -18,16 +18,17 @@
 		</div>
 	</div>
 	<div class="projet" title="Cliquez pour afficher la description">
-		<video src="../videos/EffetDeFuego.mp4" muted autoplay loop preload="auto"></video>
+		<img src="../img/projets/Day-Myer_C_TP2_2011.jpg"/>
 		<div class="description">
-			<p>Description blablalbabjklksdkkkkkkkkkkkkkkkkkkkkkkkkkkkkkalkdjlkfjlkajfdlkajklfdjalk</p>
+			<h2>Cédric Day-Myer</h2>
+			<p>Personnage réalisé dans le cadre du cours de 3D2</p>
 		</div>
 	</div>
 	<div class="projet" title="Cliquez pour afficher la description">
-		<video src="../videos/EffetDeFuego.mp4" muted autoplay loop preload="auto"></video>
+		<img src="../img/projets/Raphael_TP1_2020.jpg"/>	
 		<div class="description">
-			<h2>Destination Bangkok-Jeu</h2>
-			<p>Description blablalbabjklksdkkkkkkkkkkkkkkkkkkkkkkkkkkkkkalkdjlkfjlkajfdlkajklfdjalk</p>
+			<h2>The Darkness</h2>
+			<p>Personnage réalisé dans le cadre du cours de 3D2, The Darkness est une puissance maléfique immatérielle qui a le pouvoir de corrompre les êtres vivants.</p>
 		</div>
 	</div>
 	<div class="projet" title="Cliquez pour afficher la description">
