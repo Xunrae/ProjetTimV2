@@ -15,6 +15,7 @@ footer {
     }
 }
 .animationBackground{
+  display:none;
   z-index: -2;
   color: #00527F;
   opacity: 0.4;
@@ -24,6 +25,7 @@ footer {
   animation: animationUn 30s infinite;
 }
 .animationBackground2{
+  display:none;
   z-index: -2;
   color: #00527F;
   opacity: 0.2;
@@ -34,6 +36,7 @@ footer {
   animation: animationDeux 35s infinite;
 }
 .animationBackground3{
+  display:none;
   z-index: -2;
   color: #00527F;
   opacity: 0.6;

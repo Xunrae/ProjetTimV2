@@ -1,5 +1,3 @@
-<div class="essais">
-<div class="progress">
 <?php
 	$page = "cheminement";
 	$pageNonIndex="background";
