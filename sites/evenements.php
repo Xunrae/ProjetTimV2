@@ -1,6 +1,7 @@
 <?php
     $page = "evenements";
 	require("../inclusions/header.inc.php");
+	require( '../json/evenementdata.php');
 ?>
 
 <!-- <img class="imgEvenement" src="../img/evenements/timTalk2017.jpg" alt="Tim Talk - 2017">
@@ -11,18 +12,18 @@
 <div class="mosaique">
 	<div class="conteneurMosaique a"></div>
 	<div class="conteneurMosaique b">
-		<p>b TIMTALK Description de l’image à gauche Description de l’image à gauche Description de l’image à gauche Description de l’image à gauche Description de l’image à gauche</p>
+		<p> <?php echo $timtalk2021["Description"]; ?> </p>
 	</div>
 	<div class="conteneurMosaique c"></div>
 	<div class="conteneurMosaique d">
-		<p>d RETROUVAILLES Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous Description de l’image en dessous</p>
+		<p><?php echo $retrouvaille["Description"]; ?></p>
 	</div>
 	<div class="conteneurMosaique e"></div>
 	<div class="conteneurMosaique f">
-		<p>f CONCERT PARTY Description image au dessus Description image au dessus Description image au dessus Description image au dessus Description image au dessus Description image au dessus</p>
+		<p> <?php echo $ConcertParty["Description"]; ?> </p>
 	</div>
 	<div class="conteneurMosaique g">
-		<p>g TIM ARCADE Description de l’image à droite Description de l’image à droite Description de l’image à droite Description de l’image à droite Description de l’image à droite Description de l’image à droite Description de l’image à droite Description de l’image à droite Description de l’image à droite</p>
+		<p><?php echo $timarcarde["Description"]; ?></p>
 	</div>
 	<div class="conteneurMosaique h"></div>
 </div>
