@@ -43,13 +43,14 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#EC2F29),to(#F0B72C)) fixed;
   z-index: -3;
   
-#descriptionCours{
-                    position:fixed;
-                    top: 20%;
-                    left: 10%;
-                    width: 80%;
+#descriptionCours{position:sticky;
+                    bottom: 0;
+                    left: 0;
+                    height: 91%;
+
                     padding: 30px;
                     background: rgba(255,255,255, 0.9);
+                    z-index: 10;
                     
                     span{position: absolute;
                          top:20px;
