@@ -14,3 +14,45 @@ footer {
       height: fit-content;}
     }
 }
+.animationBackground{
+  z-index: -2;
+  color: #00527F;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animationUn 30s infinite;
+}
+.animationBackground2{
+  z-index: -2;
+  color: #00527F;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation-delay: 30s;
+  animation: animationDeux 35s infinite;
+}
+.animationBackground3{
+  z-index: -2;
+  color: #00527F;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation-delay: 8s;
+  animation: animationTrois 40s infinite;
+}
+
+@keyframes animationUn {
+  0%   {top: 100px; left: -1000px}
+  100% {top: 0px; left: 120%}
+}
+@keyframes animationDeux {
+  0%   {top: 100px; left: -1000px}
+  100% {top: 0px; left: 120%}
+}
+@keyframes animationTrois {
+  0%   {top: 100px; left: -1000px}
+  100% {top: 0px; left: 120%}
+}

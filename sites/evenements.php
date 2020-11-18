@@ -1,5 +1,6 @@
 <?php
-    $page = "evenements";
+	$page = "evenements";
+	$pageNonIndex="background";
 	require("../inclusions/header.inc.php");
 ?>
 
