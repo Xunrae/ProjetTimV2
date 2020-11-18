@@ -37,7 +37,9 @@ function addEventListenerList(list, event, fn){
   */ 
 function ouvrirFenetre(){
     if(document.getElementById("descriptionProf")){
-        document.getElementById("descriptionProf").remove();
+        document.getElementById("descriptionProf").classList.remove("animOuverture");
+        document.getElementById("descriptionProf").classList.add("animFermeture");
+        setTimeout(() =>document.getElementById("descriptionProf").remove(), 500);
     }
 
     const laPage = document.getElementById("page");
@@ -53,6 +55,7 @@ function ouvrirFenetre(){
     //crée un div avec id pour css
     let div =  document.createElement("div");
     div.setAttribute("id","descriptionProf");
+    div.classList.add("animOuverture")
     //paragraphe pour div
     let para = document.createElement("p");
     let photo = document.createElement("img");
@@ -78,5 +81,7 @@ function ouvrirFenetre(){
 
 //petite fonction qui détruit la fenetre créée dans ouvrirFenetre()
 function fermerFenetre(){
-    document.getElementById("descriptionProf").remove();
+    document.getElementById("descriptionProf").classList.remove("animOuverture");
+    document.getElementById("descriptionProf").classList.add("animFermeture");
+    setTimeout(() =>document.getElementById("descriptionProf").remove(), 500);
 }
