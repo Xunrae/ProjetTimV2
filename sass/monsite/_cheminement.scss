@@ -3,23 +3,28 @@ html{
 }
 
 .cheminementrond{
+    margin: 0 50px;
     display: block;
-    padding-top: 3vh;
-    margin: 0 auto;
-    padding-left: 18vh;
+    padding: 0;
     z-index: 1;
-    &:first-child{padding-top: 35vh;}
+
+    &:first-child {
+      padding-top: 35vh;
+    }
+}
+
+.cheminementrond h3 {
+  color: white;
 }
 
 .rond{
+    margin: 0 0 30px 30px;
     vertical-align: middle;
     width: 200px;
     height: 200px;
     border-radius: 100%;
     align-content: center;
     position: relative;
-    margin-right: 30px;
-    margin-bottom: 30px;
     &:before{
         width: 200px;
         height: 200px;
@@ -34,6 +39,10 @@ html{
     }
 }
 
+.rond :hover {
+  cursor: pointer;
+}
+
 body {
   overflow-x: hidden;
   height: 100%;
@@ -43,47 +52,50 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#EC2F29),to(#F0B72C)) fixed;
   z-index: -3;
   
-#descriptionCours{position:sticky;
-                    bottom: 10%;
-                    left: 10%;
-                    width: 80%;
-
-                    padding: 30px;
-                    background: rgba(255,255,255, 0.9);
-                    z-index: 10;
-                    
-                    span{position: absolute;
-                         top:20px;
-                         right: 30px;
-                         height: 30px;
-                         width:30px; 
-                         border-radius: 15px;
-                         font-size : 1.25em;
-                         text-align:center;
-                         cursor: pointer;
-                         background: black;
-                         color: white;
-                    }
-
-                    &::after{content:"";
-                            position:absolute;
-                            top:0;
-                            left:0;
-                            width: 5px;
-                            height:5px;
-                            border-radius: 3px;
-                            animation: animBorderDescriptAfter 5s infinite;
-                            }
-                    &::before{content:"";
-                            position:absolute;
-                            top:0;
-                            left:0;
-                            width: 5px;
-                            height:5px;
-                            border-radius: 10px;
-                            animation: animBorderDescriptBefore 5s infinite;
-                            }
-                }
+#descriptionCours {
+  position: sticky;
+  bottom: 10%;
+  padding: 30px;
+  margin: 50px;
+  background: rgba(255,255,255, 0.9);
+  z-index: 10;
+  
+    span {
+      position: absolute;
+      top:20px;
+      right: 30px;
+      height: 30px;
+      width:30px; 
+      border-radius: 15px;
+      font-size : 1.25em;
+      text-align:center;
+      cursor: pointer;
+      background: black;
+      color: white;
+    }
+  
+    &::after {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width: 5px;
+      height:5px;
+      border-radius: 3px;
+      animation: animBorderDescriptAfter 5s infinite;
+    }
+  
+    &::before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width: 5px;
+      height:5px;
+      border-radius: 10px;
+      animation: animBorderDescriptBefore 5s infinite;
+    }
+  }
 
 }
 
@@ -185,4 +197,20 @@ body {
     top:99%;
     transform: rotate(360deg);
     background-color: blue;}
+}
+
+.cheminementrond hr {
+  border: 4px solid white;
+}
+
+/////////////////////////////////////////////////////////Début media querries
+// Desktop
+@media screen and (min-width: 1281px) {
+  .cheminementrond {
+    margin: 0 150px;
+  }
+
+  #descriptionCours {
+    margin: 0 150px;
+  }  
 }
