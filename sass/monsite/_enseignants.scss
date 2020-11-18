@@ -4,12 +4,12 @@
 #descriptionProf{
     display: flex;
     position: sticky;
-    bottom: 0;
-    width: 98%;
-    height: 91%;
+    bottom: 10%;
+    left:12.5%;
+    width: 70%;
     padding: 30px;
     z-index: 10;
-    background: rgba(255,255,255, 0.9);
+    background: rgba(255,255,255, 0.95);
     
     span{
         position: absolute;
@@ -35,6 +35,7 @@
     img{
         border-radius:10px;
         height: 28vw;
+        max-width: 30vw;
         margin-right: 5%;
         margin-top: 1%;
         
