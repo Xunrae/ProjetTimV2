@@ -1,7 +1,9 @@
 <?php
-    $page = "projets";
+	$page = "projets";
+	$pageNonIndex="background";
 	require("../inclusions/header.inc.php");
 ?>
+
 <section>
 	<div class="projet" title="Cliquez pour afficher la description">
 		<video src="../videos/QuercusFootage.mp4" muted autoplay loop preload="auto" ></video>
