@@ -57,12 +57,13 @@ body {
   //background: linear-gradient(0deg, #F0B72C 0%, #EC2F29 51%, #00527F 75%);
   z-index: -2;
   
-#descriptionCours{position:fixed;
-                    top: 20%;
-                    left: 10%;
-                    width: 80%;
+#descriptionCours{position:sticky;
+                    bottom: 0;
+                    left: 0;
+                    height: 91%;
                     padding: 30px;
                     background: rgba(255,255,255, 0.9);
+                    z-index: 10;
                     
                     span{position: absolute;
                          top:20px;
