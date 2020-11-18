@@ -15,7 +15,7 @@
 ?>
 
 	<div class="cheminementrond">
-
+		<h3><?="Session ".$noSession?></h3>
 
 		<?php foreach($session as $unCours){
 			?>
