@@ -37,10 +37,13 @@
 				<script src="js/fluidSimulation.js"></script>
 			<?php elseif($page=="cheminement") : ?>
 				<script src="../js/interactionPastilles.js"></script>
+				<script src="../js/background.js"></script>
 			<?php elseif($page=="projets") : ?>
 				<script src="../js/interactionProjets.js"></script>
+				<script src="../js/background.js"></script>
 			<?php elseif($page=="enseignants") : ?>
 				<script src="../js/interactionProfs.js"></script>
+				<script src="../js/background.js"></script>
 			<?php endif;?>
 </body>
 </html>

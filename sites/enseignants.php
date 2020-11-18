@@ -1,5 +1,6 @@
 <?php
-    $page = "enseignants";
+	$page = "enseignants";
+	$pageNonIndex="background";
 	require("../inclusions/header.inc.php");
 ?>
 
