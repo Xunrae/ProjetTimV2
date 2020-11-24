@@ -68,11 +68,10 @@
     justify-content: flex-start;
     
     background-color: white;
-    outline: #000000 solid 3px;
+    outline: #00527F solid 3px;
 
     transition: height 1s;
     
-
     #front {
         
         margin-bottom: 20px;
@@ -94,6 +93,10 @@
             ul{
                 padding: 0;
                 list-style-type: none;
+
+                a {
+                    color: #00527F;
+                }
             }
         }
     }
@@ -112,7 +115,7 @@
     display: inline-block;
     width: 20px;
     height: 115px;
-    border: black solid 3px;
+    border: #00527F solid 3px;
     position: absolute;
     
     transform: translate(37px,-75px) rotate(90deg) skewY(-40deg) ;
@@ -125,7 +128,7 @@
     display: inline-block;
     width: 15px;
     height: 60px;
-    border: black solid 3px;
+    border: #00527F solid 3px;
     position: absolute;
     
     transition: height 1s;
