@@ -23,7 +23,7 @@ section{
 .projet{
     width: 80%;
     height: auto;
-    border: black solid 4px;
+    border: #00527F solid 4px;
     margin-right: 5%;
     
     //Wtf le fichier simple-grid fuck up mes trucs, pourquoi ?!
@@ -36,7 +36,7 @@ section{
         margin-left: 4vw;
 
         color: white;
-        text-shadow: black;
+        text-shadow: #00527F;
 
         font-size: 2.5vw;
 
@@ -61,7 +61,7 @@ section{
         width: 80vw;
         opacity: 0;
         transform: translate(0%,-100%);
-        background-color: black;
+        background-color: #00527F;
 
         p{
             //Vertical, horizontal
@@ -96,7 +96,7 @@ section{
     width: 1rem;
     height: 45vw;
     background-color: white;
-    border: black solid 4px;
+    border: #00527F solid 4px;
 
     position: absolute;
     z-index: -1;
@@ -110,7 +110,7 @@ section{
     height: 3.1%;
 
     background-color: white;
-    border: black solid 4px;
+    border: #00527F solid 4px;
 
     position: absolute;
     z-index: -1;
@@ -159,7 +159,7 @@ section{
         width: 1rem;
         height: 20.35vw;
         background-color: white;
-        border: black solid 4px;
+        border: #00527F solid 4px;
     
         position: absolute;
         z-index: -1;
@@ -172,7 +172,7 @@ section{
         width: 23.1vw;
         height: 3%;
         background-color: white;
-        border: black solid 4px;
+        border: #00527F solid 4px;
     
         position: absolute;
         z-index: -1;

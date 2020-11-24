@@ -1,6 +1,11 @@
+p {
+    color: #00527F;
+}
+
 .categorieProf{
     color: white;
 }
+
 #descriptionProf{
     display: flex;
     position: sticky;
@@ -21,7 +26,7 @@
         font-size : 1.25em;
         text-align: center;
         cursor: pointer;
-        background: black;
+        background: #00527F;
         color: white;
     }
 
