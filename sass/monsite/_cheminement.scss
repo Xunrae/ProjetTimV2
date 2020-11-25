@@ -26,6 +26,7 @@ p {
     vertical-align: middle;
     width: 200px;
     height: 200px;
+    border: solid #00527F;
     border-radius: 100%;
     align-content: center;
     position: relative;
@@ -60,12 +61,18 @@ body {
 
 #descriptionCours {
   position: sticky;
-  bottom: 10%;
-  padding: 30px;
-  margin: 50px;
+  padding: 50px;
+  margin: 37.5%;
   background: rgba(255,255,255, 0.95);
   z-index: 10;
+  max-width: 500px;
+  text-align:justify;
   
+    .nomCoursDescription{
+      text-align:center;
+      color:#00527F;
+    }
+
     span {
       position: absolute;
       top:20px;
@@ -110,15 +117,21 @@ body {
 }
 
 @keyframes animDescription{
-  from{transform: scale(0);}
-  to{transform: scale(1);}
+  from{transform: scale(0);
+        border-radius: 100%;}
+
+  to{transform: scale(1);
+      border-radius: 0%;}
 }
 
 .animFermeture{animation: animFermetureDescription 0.5s forwards;}
 
 @keyframes animFermetureDescription{
-  from{transform: scale(1);}
-  to{transform: scale(0);}
+  from{transform: scale(1);
+        border-radius:0%;}
+
+  to{transform: scale(0);
+      border-radius:100%;}
 }
 
 @keyframes animBorderDescriptAfter{
