@@ -1,0 +1,87 @@
+.animationBackground{
+  z-index: -2;
+  color: #00527F;
+  left: -100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animation1 15s 5s infinite;
+}
+.animationBackground2{
+  z-index: -2;
+  color: #00527F;
+  left: -100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animation2 15s 10s infinite;
+}
+.animationBackground3{
+  z-index: -2;
+  left: -100%;
+  color: #00527F;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animation3 15s infinite;
+}
+
+.animationBackground4{
+  z-index: -2;
+  color: #00527F;
+  left: -100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animation4 15s 15s infinite;
+}
+
+.animationBackground5{
+  z-index: -2;
+  color: #00527F;
+  left: -100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animation5 15s 25s infinite;
+}
+.animationBackground6{
+  z-index: -2;
+  color: #00527F;
+  left: -100%;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  animation: animation6 15s 4s infinite;
+}
+
+@keyframes animation1 {
+  0%   {top: 4vh; left: -60vw}
+  100% {top: 0vh; left: 100vw}
+}
+@keyframes animation2 {
+  0%   {top: 22vh; left: -60vw}
+  100% {top: 18vh; left: 100vw}
+}
+@keyframes animation3 {
+  0%   {top: 42vh; left: -60vw}
+  100% {top: 38vh; left: 100vw}
+}
+@keyframes animation4 {
+  0%   {top: 62vh; left: -60vw}
+  100% {top: 58vh; left: 100vw}
+}
+@keyframes animation5 {
+  0%   {top: 82vh; left: -60vw}
+  100% {top: 78vh; left: 100vw}
+}
+@keyframes animation6 {
+  0%   {top: 98vh; left: -60vw}
+  100% {top: 94vh; left: 100vw}
+}
