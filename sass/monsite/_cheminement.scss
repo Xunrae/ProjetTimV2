@@ -9,6 +9,7 @@ p {
 .cheminementrond{
     margin: 0 50px;
     display: block;
+    position:relative;
     padding: 0;
     z-index: 1;
 
@@ -60,17 +61,23 @@ body {
 .noSession{color: white;}
 
 #descriptionCours {
-  position: sticky;
+  position: absolute;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  top: 0;
+  left: 0;
+  height: 55%;
   padding: 50px;
-  margin: 37.5%;
+  margin: 0 25%;
   background: rgba(255,255,255, 0.95);
   z-index: 10;
-  max-width: 500px;
+  width: 50%;
   text-align:justify;
   
     .nomCoursDescription{
       text-align:center;
       color:#00527F;
+      display:block;
     }
 
     span {
@@ -239,6 +246,13 @@ body {
 
 /////////////////////////////////////////////////////////Début media querries
 // Desktop
+@media screen and (max-width: 750px) {
+  body #descriptionCours {
+    margin: 0;
+    width: 80%;
+    top: 50px;
+  }
+}
 @media screen and (min-width: 1281px) {
   .cheminementrond {
     margin: 0 150px;
