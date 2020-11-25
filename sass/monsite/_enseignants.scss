@@ -1,5 +1,7 @@
-p {
+.sectionEnseignants p {
     color: #00527F;
+    font-family: SansationLight;
+
 }
 
 .categorieProf{
@@ -35,6 +37,7 @@ p {
         margin-top: 0.2%;
         text-align: justify;
         font-size: 14px;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     img {
@@ -74,6 +77,7 @@ h2 {
     display:block;
     margin-left: 5%;
     margin-top: 2em;
+
 
     &:nth-child(odd) {
         margin-left: 40%;
