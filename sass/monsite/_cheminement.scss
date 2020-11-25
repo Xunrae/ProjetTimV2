@@ -10,6 +10,7 @@ html{
 .cheminementrond{
     margin: 0 50px;
     display: block;
+    position:relative;
     padding: 0;
     z-index: 1;
 
@@ -27,6 +28,7 @@ html{
     vertical-align: middle;
     width: 200px;
     height: 200px;
+    border: solid #00527F;
     border-radius: 100%;
     align-content: center;
     position: relative;
@@ -60,13 +62,25 @@ body {
 .noSession{color: white;}
 
 #descriptionCours {
-  position: sticky;
-  bottom: 10%;
-  padding: 30px;
-  margin: 50px;
+  position: absolute;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  top: 0;
+  left: 0;
+  height: 55%;
+  padding: 50px;
+  margin: 0 25%;
   background: rgba(255,255,255, 0.95);
   z-index: 10;
+  width: 50%;
+  text-align:justify;
   
+    .nomCoursDescription{
+      text-align:center;
+      color:#00527F;
+      display:block;
+    }
+
     span {
       position: absolute;
       top:20px;
@@ -111,15 +125,21 @@ body {
 }
 
 @keyframes animDescription{
-  from{transform: scale(0);}
-  to{transform: scale(1);}
+  from{transform: scale(0);
+        border-radius: 100%;}
+
+  to{transform: scale(1);
+      border-radius: 0%;}
 }
 
 .animFermeture{animation: animFermetureDescription 0.5s forwards;}
 
 @keyframes animFermetureDescription{
-  from{transform: scale(1);}
-  to{transform: scale(0);}
+  from{transform: scale(1);
+        border-radius:0%;}
+
+  to{transform: scale(0);
+      border-radius:100%;}
 }
 
 @keyframes animBorderDescriptAfter{
@@ -227,6 +247,13 @@ body {
 
 /////////////////////////////////////////////////////////Début media querries
 // Desktop
+@media screen and (max-width: 750px) {
+  body #descriptionCours {
+    margin: 0;
+    width: 80%;
+    top: 50px;
+  }
+}
 @media screen and (min-width: 1281px) {
   .cheminementrond {
     margin: 0 150px;

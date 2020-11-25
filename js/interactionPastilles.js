@@ -40,10 +40,14 @@ function ouvrirFenetre(){
     if(document.getElementById("descriptionCours")){
         document.getElementById("descriptionCours").classList.remove("animOuverture");
         document.getElementById("descriptionCours").classList.add("animFermeture");
-        setTimeout(() =>document.getElementById("descriptionCours").remove(), 500);
+        document.getElementById("descriptionCours").remove()
+        //setTimeout(() =>document.getElementById("descriptionCours").remove(), 500);
     }
 
     const laPage = document.getElementById("page");
+
+    //tous les h3 Session, pour pouvoir aligner la description à la session
+    const lesSessions = document.getElementsByTagName("h3")
 
     let textTarget = event.target.innerText;
     let codeTarget = textTarget.slice(0,7);
@@ -54,32 +58,31 @@ function ouvrirFenetre(){
     //va chercher le # de la session associée à la pastille
     let noSession = (event.target.dataset.session) -1;
 
+    let laSession;
+    for (let i = 0; i < lesSessions.length; i++){
+        if(lesSessions[i].textContent == "Session "+(noSession+1)){
+            laSession = lesSessions[i];
+        }
+    }
+
     //crée un div avec id pour css
     let div =  document.createElement("div");
     div.setAttribute("id","descriptionCours");
     div.classList.add("animOuverture");
 
+
+    //paragraphe pour div
+    let nomCours = document.createElement("h4");
+    nomCours.setAttribute("class", "nomCoursDescription");
+
+
     //paragraphe pour div
     let para = document.createElement("p");
-    //paragraphe nombre d'heures du cours;
-    let heures = document.createElement("p");
-    //paragraphe nombre d'unités du cours
-    let NbUnites = document.createElement("p");
-    //paragraphe pondération du cours
-    let ponderation = document.createElement("p");
-    //paraggraphe prealables du cours
-    let prealables = document.createElement("p");
-  
+
+    //va chercher le nom du cours dans son json
+    let contenuNomCours = document.createTextNode(arrayData[noSession][1][codeTarget].NomCours.slice(11,100));
     //va chercher la description du cours dans le contenu json
     let contenu = document.createTextNode(arrayData[noSession][1][codeTarget].Description);
-    //va chercher la durée du cours
-    let contenuHeures = document.createTextNode("Durée du cours : "+arrayData[noSession][1][codeTarget].Heures);
-    //va chercher le nombre d'unités du cours
-    let contenuUnites = document.createTextNode("Nombre d'unités : "+arrayData[noSession][1][codeTarget].Nbunite);
-    //va chercher la pondération dans le json
-    let contenuPonderation = document.createTextNode("Pondération : "+arrayData[noSession][1][codeTarget].Pondération);
-    //va chercher les préalables dans le json
-    let contenuPrealables = document.createTextNode("Préalables : "+arrayData[noSession][1][codeTarget].Prealable);
 
     //crée un span pour fermer la fenêtre
     let fermeture = document.createElement("span");
@@ -87,23 +90,18 @@ function ouvrirFenetre(){
     fermeture.addEventListener('click',fermerFenetre);
 
     //associe elements assemblés
+    nomCours.appendChild(contenuNomCours);
     para.appendChild(contenu);
-    heures.appendChild(contenuHeures);
-    ponderation.appendChild(contenuPonderation);
-    NbUnites.appendChild(contenuUnites);
-    prealables.appendChild(contenuPrealables);
+    div.appendChild(nomCours);
     div.appendChild(para);
-    div.appendChild(heures);
-    div.appendChild(ponderation);
-    div.appendChild(NbUnites);
-    div.appendChild(prealables);
     div.appendChild(fermeture);
-    laPage.appendChild(div);
+    laSession.parentNode.appendChild(div);
 }
 
 //petite fonction qui détruit la fenetre créée dans ouvrirFenetre()
 function fermerFenetre(){
     document.getElementById("descriptionCours").classList.remove("animOuverture");
     document.getElementById("descriptionCours").classList.add("animFermeture");
-    window.setTimeout(() => document.getElementById("descriptionCours").remove(), 500);
+    document.getElementById("descriptionCours").remove()
+    //window.setTimeout(() => document.getElementById("descriptionCours").remove(), 500);
 }
