@@ -40,7 +40,8 @@ function ouvrirFenetre(){
     if(document.getElementById("descriptionCours")){
         document.getElementById("descriptionCours").classList.remove("animOuverture");
         document.getElementById("descriptionCours").classList.add("animFermeture");
-        setTimeout(() =>document.getElementById("descriptionCours").remove(), 500);
+        document.getElementById("descriptionCours").remove()
+        //setTimeout(() =>document.getElementById("descriptionCours").remove(), 500);
     }
 
     const laPage = document.getElementById("page");
@@ -64,15 +65,11 @@ function ouvrirFenetre(){
         }
     }
 
-    let rectSession = laSession.getBoundingClientRect();
-    let posSession = rectSession.bottom;
-    console.log(posSession);
-
     //crée un div avec id pour css
     let div =  document.createElement("div");
     div.setAttribute("id","descriptionCours");
     div.classList.add("animOuverture");
-    div.style.bottom = `${posSession}px`;
+
 
     //paragraphe pour div
     let nomCours = document.createElement("h4");
@@ -98,12 +95,13 @@ function ouvrirFenetre(){
     div.appendChild(nomCours);
     div.appendChild(para);
     div.appendChild(fermeture);
-    laPage.appendChild(div);
+    laSession.parentNode.appendChild(div);
 }
 
 //petite fonction qui détruit la fenetre créée dans ouvrirFenetre()
 function fermerFenetre(){
     document.getElementById("descriptionCours").classList.remove("animOuverture");
     document.getElementById("descriptionCours").classList.add("animFermeture");
-    window.setTimeout(() => document.getElementById("descriptionCours").remove(), 500);
+    document.getElementById("descriptionCours").remove()
+    //window.setTimeout(() => document.getElementById("descriptionCours").remove(), 500);
 }
