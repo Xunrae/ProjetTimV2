@@ -1,1 +1,9 @@
-body{font-family: "Roboto-Regular", arial;}
+@font-face {
+    font-family: SansationLight;
+        src: url(../fonts/Sansation-Light.ttf);
+}  
+
+body {
+    font-family: "Roboto-Regular";
+        src: url('../fonts/Roboto-Regular.ttf');
+}

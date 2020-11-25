@@ -85,7 +85,7 @@
 						<div id="menuBurger">
 							<div id="front">
 								<img src="img/boutonBurger.png" alt="Bouton Burger"/>
-								<div>Menu
+								<div>
 									<ul>
 										<li><a href='sites/cheminement.php'>Cheminement</a></li>
 										<li><a href='sites/enseignants.php'>Enseignants</a></li>
