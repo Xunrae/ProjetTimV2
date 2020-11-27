@@ -1,14 +1,13 @@
 .sectionEnseignants p {
     color: #00527F;
     font-family: SansationLight;
-
 }
 
-.categorieProf{
+.categorieProf {
     color: white;
 }
 
-#descriptionProf{
+#descriptionProf {
     display: flex;
     position: sticky;
     bottom: 20%;
@@ -46,7 +45,6 @@
         max-width: 30vw;
         margin-right: 5%;
         margin-top: 1%;
-        
     }
 }
 
@@ -136,6 +134,5 @@ h2 {
     #divCreatif {
         margin-left: 150px;
         width: 35%;
-
     }    
 }
