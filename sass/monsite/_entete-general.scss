@@ -37,7 +37,6 @@
     font-family: 'Bruno Ace SC Regular'; 
         src: url('../fonts/Bruno Ace SC Regular.ttf');
     color: white;
-    text-shadow: -0.5px -0.5px 0 #679cff, -1px -1px 0 #679cff, -1.5px -1.5px 0 #679cff, -2px -2px 0 #679cff, -2.5px -2.5px 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
     font-size: 3vw;
     font-weight: 100;
     line-height: 90%;
@@ -60,7 +59,6 @@
 
 #menuBurger{ 
     width: 120px;
-    max-width: 120px;
     //120px
     height: 60px;
     //max-height: 60px;
@@ -80,14 +78,16 @@
     
     #front {
         
-        margin-bottom: 20px;
-        padding: 1em;
-        width: 16vw;
+        /*margin-bottom: 20px;
+        padding: 1em;*/
+        width: 115px;
         height: 50px;
         background-color: rgba($color: #ffffff, $alpha: 0);
     
         img {
-            width: 24px;
+            width: 30px;
+            margin-top: 10px;
+            margin-left: 10px;
             
         }
 
@@ -99,6 +99,7 @@
             ul {
                 padding: 0;
                 list-style-type: none;
+                margin-left: 10px;
 
                 a {
                     font-family: SansationLight;
@@ -156,8 +157,6 @@
     font-family: 'Bruno Ace SC Regular'; 
     src: url('../fonts/Bruno Ace SC Regular.ttf');
     color: white;
-    text-shadow: -0.1vw -0.1vw 0 #679cff, -0.2vw -0.2vw 0 #679cff, -0.3vw -0.3vw 0 #679cff, -0.4vw -0.4vw 0 #679cff, -0.5vw -0.5vw 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
-    //-webkit-text-stroke: #00527F 2px;
     font-size: 5vw;
     padding: 0 10vw;
     margin: 0;
@@ -178,15 +177,14 @@
 
     #boiteABurger{
         right: 50px;
-        top: 80px;
-        
-        
     }
 
     #menuBurger{ 
         width: 70px;
+        //120px
         height: 40px;
-      
+        //max-height: 60px;
+        //60px
         overflow: hidden;
         
         align-self: center;
@@ -201,6 +199,8 @@
         transition: height 1s;
         
         #front {
+            
+            
             width: 100%;
             height: 100%;
             margin-bottom: 0;
@@ -209,23 +209,21 @@
         
             img {
                 width: 20px;
-                margin-left: 10px;
-                margin-top: 12px;
                 
             }
     
             div {
                 display: inline;
-                width: 30px;
+                margin-left: 15px;
     
                 ul {
-                    padding-left: 11px;
-                    margin: 0;
+                    padding: 0;
                     list-style-type: none;
+                    font-size: 10px;
+                    
     
                     a {
                         font-family: SansationLight;
-                        font-size: 10px;
                         color: #00527F;
                     }
                 }
@@ -234,7 +232,7 @@
     }
     
     #menuBurger:hover, #menuBurger:hover::before {
-        height: 140px;
+        height: 110px;
     }
     
     #boiteABurger:hover {
@@ -242,9 +240,15 @@
     }
     
     #menuBurger::after {
+        content: "";
+        display: inline-block;
         width: 10px;
         height: 70px;
-        
+        max-height: 115px;
+        border: #00527F solid 3px;
+        position: absolute;
+    
+        //translate(37px,-75px)
         transform: translate(21px,-46px) rotate(90deg) skewY(-40deg);
         background-color: white;
     }
@@ -259,7 +263,7 @@
         position: absolute;
         
         transition: height 1s;
-        transform: translate(-16px,-10px) skewY(50deg) ;
+        transform: translate(-16px,-10px) skewY(50deg);
         background-color: white;
     }
 }

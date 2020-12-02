@@ -5,8 +5,9 @@ footer {
   z-index: 100;
   background-color: #00527F;
   padding-top: 3px;
-  display:flex;
+  display: table;
   justify-content:center;
+  text-align: center;
 }
 
 #colophon div div { 
@@ -15,5 +16,11 @@ footer {
   a img {
     width: fit-content;
     height: fit-content;
+
+    transition: transform 0.5s;
+  }
+
+  a:hover img{
+    transform: scale(1.2);
   }
 }
