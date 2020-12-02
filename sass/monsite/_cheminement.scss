@@ -1,41 +1,50 @@
-html{
+html {
   height: 100%;
 }
-.cheminementrond{
-    margin: 0 50px;
-    display: block;
-    padding: 0;
-    z-index: 1;
 
-    &:first-child {
-      padding-top: 35vh;
-    }
+.cheminementrond p {
+  color: #00527F;
+  font-family: SansationLight;
+}
+
+.cheminementrond {
+  margin: 0 50px;
+  display: block;
+  position:relative;
+  padding: 0;
+  z-index: 1;
+
+  &:first-child {
+    padding-top: 35vh;
+  }
 }
 
 .cheminementrond h3 {
   color: white;
 }
 
-.rond{
-    margin: 0 0 30px 30px;
-    vertical-align: middle;
+.rond {
+  margin: 0 0 30px 30px;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border: solid #00527F;
+  border-radius: 100%;
+  align-content: center;
+  position: relative;
+
+  &:before {
     width: 200px;
     height: 200px;
+    background-color: white;
+    top : 1%;
+    left: -13%;
+    transform: translate(calc(-5px- 50%), calc(-5px -50%));
+    content: " ";
+    position: absolute;
     border-radius: 100%;
-    align-content: center;
-    position: relative;
-    &:before{
-        width: 200px;
-        height: 200px;
-        background-color: white;
-        top : 1%;
-        left: -13%;
-        transform: translate(calc(-5px- 50%), calc(-5px -50%));
-        content: " ";
-        position: absolute;
-        border-radius: 100%;
-        z-index: -1;
-    }
+    z-index: -1;
+  }
 }
 
 .rond :hover {
@@ -51,16 +60,30 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#0052AF),to(#00527F)) fixed;
   z-index: -3;
   
-.noSession{color: white;}
+  .noSession {
+    color: white;
+  }
 
-#descriptionCours {
-  position: sticky;
-  bottom: 10%;
-  padding: 30px;
-  margin: 50px;
-  background: rgba(255,255,255, 0.95);
-  z-index: 10;
+  #descriptionCours {
+    position: absolute;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    top: 0;
+    left: 0;
+    height: 55%;
+    padding: 50px;
+    margin: 0 25%;
+    background: rgba(255,255,255, 0.95);
+    z-index: 10;
+    width: 50%;
+    text-align:justify;
   
+    .nomCoursDescription{
+      text-align:center;
+      color:#00527F;
+      display:block;
+    }
+
     span {
       position: absolute;
       top:20px;
@@ -71,7 +94,7 @@ body {
       font-size : 1.25em;
       text-align:center;
       cursor: pointer;
-      background: black;
+      background: #00527F;
       color: white;
     }
   
@@ -97,122 +120,197 @@ body {
       animation: animBorderDescriptBefore 5s infinite;
     }
   }
-
 }
 
-.animOuverture{
+.animOuverture {
   animation: animDescription 0.5s forwards;
 }
 
-@keyframes animDescription{
-  from{transform: scale(0);}
-  to{transform: scale(1);}
+@keyframes animDescription {
+  from {
+    transform: scale(0);
+    border-radius: 100%;
+  }
+
+  to {
+    transform: scale(1);
+    border-radius: 0%;
+  }
 }
 
-.animFermeture{animation: animFermetureDescription 0.5s forwards;}
-
-@keyframes animFermetureDescription{
-  from{transform: scale(1);}
-  to{transform: scale(0);}
+.animFermeture {
+  animation: animFermetureDescription 0.5s forwards;
 }
 
-@keyframes animBorderDescriptAfter{
-  from{left:0%; 
-      top:0; 
-      transform: rotate(0deg); 
-      background-color: blue;}
+@keyframes animFermetureDescription {
+  from{
+    transform: scale(1);
+    border-radius:0%;
+  }
 
-  13%{width: 35px;}    
+  to {
+    transform: scale(0);
+    border-radius:100%;
+  }
+}
+
+@keyframes animBorderDescriptAfter {
+  from {
+    left:0%; 
+    top:0; 
+    transform: rotate(0deg); 
+    background-color: blue;
+  }
+
+  13% {
+    width: 35px;
+  }    
   
-  20%{transform: rotate(0deg);
-    background-color: green;}
+  20% {
+    transform: rotate(0deg);
+    background-color: green;
+  }
 
-  22%{transform: rotate(90deg);
-    background-color: black;
-    width: 5px;}
+  22% {
+    transform: rotate(90deg);
+    background-color: #00527F;
+    width: 5px;
+  }
 
-  25%{left:99.6%;
-      top:0;
-      background-color: yellow;}
+  25% {
+    left:99.6%;
+    top:0;
+    background-color: yellow;
+  }
       
-  45%{transform: rotate(90deg);
-    background-color: red;}
-  47%{transform: rotate(180deg);
-    background-color: black;}
+  45% {
+    transform: rotate(90deg);
+    background-color: red;
+  }
+  
+  47% {
+    transform: rotate(180deg);
+    background-color: #00527F;
+  }
 
-  50%{left:99.6%;
-      top:99%;
-      background-color: orange;
-      width: 5px;}
+  50% {
+    left:99.6%;
+    top:99%;
+    background-color: orange;
+    width: 5px;
+  }
 
-  63%{width: 35px;}
+  63% {
+    width: 35px;
+  }
 
-  70%{transform: rotate(180deg);
-    background-color: green;}
-  72%{transform: rotate(270deg);
+  70% {
+    transform: rotate(180deg);
+    background-color: green;
+  }
+
+  72% {
+    transform: rotate(270deg);
     background-color: purple;
-    width: 5px;}
+    width: 5px;
+  }
 
-  75%{left:0%;
-      top:99%;
-      background-color: black;}
+  75% {
+    left:0%;
+    top:99%;
+    background-color: #00527F;
+  }
 
-  97%{transform: rotate(270deg);
-    background-color: blue;}
+  97% {
+    transform: rotate(270deg);
+    background-color: blue;
+  }
 
-  to{left:0%;
+  to {
+    left:0%;
     top:0%;
     transform: rotate(360deg);
-    background-color: blue;}
+    background-color: blue;
+  }
 }
 
-@keyframes animBorderDescriptBefore{
-  from{left:99.6%; 
-      top:99%; 
-      transform: rotate(0deg); 
-      background-color: blue;}
+@keyframes animBorderDescriptBefore {
+  from {
+    left:99.6%; 
+    top:99%; 
+    transform: rotate(0deg); 
+    background-color: blue;
+  }
 
-  13%{width: 35px;}  
+  13% {
+    width: 35px;
+  }  
 
-  20%{transform: rotate(0deg);
-    background-color: green;}
-  22%{transform: rotate(90deg);
-    background-color: black;
-    width: 5px;}
+  20% {
+    transform: rotate(0deg);
+    background-color: green;
+  }
 
-  25%{left:0;
-      top:99%;
-      background-color: yellow;}
+  22% {
+    transform: rotate(90deg);
+    background-color: #00527F;
+    width: 5px;
+  }
 
-  45%{transform: rotate(90deg);
-    background-color: red;}
-  47%{transform: rotate(180deg);
-    background-color: black;}
+  25% {
+    left:0;
+    top:99%;
+    background-color: yellow;
+  }
 
-  50%{left:0;
-      top:0%;
-      background-color: orange;
-      width: 5px;}
+  45% {
+    transform: rotate(90deg);
+    background-color: red;
+  }
 
-  63%{width: 35px;}
+  47% {
+    transform: rotate(180deg);
+    background-color: #00527F;
+  }
 
-  70%{transform: rotate(180deg);
-    background-color: green;}
-  72%{transform: rotate(270deg);
+  50% {
+    left:0;
+    top:0%;
+    background-color: orange;
+    width: 5px;
+  }
+
+  63% {
+    width: 35px;
+  }
+
+  70% {
+    transform: rotate(180deg);
+    background-color: green;
+  }
+
+  72% {
+    transform: rotate(270deg);
     background-color: purple;
     width: 5px;}
 
-  75%{left:99.6%;
-      top:0%;
-      background-color: black;}
+  75% {
+    left:99.6%;
+    top:0%;
+    background-color: #00527F;
+  }
 
-  97%{transform: rotate(270deg);
-    background-color: blue;}
+  97% {
+    transform: rotate(270deg);
+    background-color: blue;
+  }
 
-  to{left:99.6%;
+  to {
+    left:99.6%;
     top:99%;
     transform: rotate(360deg);
-    background-color: blue;}
+    background-color: blue;
+  }
 }
 
 .cheminementrond hr {
@@ -220,6 +318,15 @@ body {
 }
 
 /////////////////////////////////////////////////////////Début media querries
+//Téléphone
+@media screen and (max-width: 750px) {
+  body #descriptionCours {
+    margin: 0;
+    width: 80%;
+    top: 50px;
+  }
+} 
+
 // Desktop
 @media screen and (min-width: 1281px) {
   .cheminementrond {

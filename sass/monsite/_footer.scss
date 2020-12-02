@@ -1,61 +1,15 @@
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 #colophon div div { 
-    margin: 0 auto;
-    width: 210px !important;
-  
-    a{
-      img{
-      width: fit-content;
-      height: fit-content;}
-    }
-}
-.animationBackground{
-  display:none;
-  z-index: -2;
-  color: #00527F;
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  animation: animationUn 30s infinite;
-}
-.animationBackground2{
-  display:none;
-  z-index: -2;
-  color: #00527F;
-  opacity: 0.2;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  animation-delay: 30s;
-  animation: animationDeux 35s infinite;
-}
-.animationBackground3{
-  display:none;
-  z-index: -2;
-  color: #00527F;
-  opacity: 0.6;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  animation-delay: 8s;
-  animation: animationTrois 40s infinite;
-}
+  margin: 0 auto;
+  width: 210px !important;
 
-@keyframes animationUn {
-  0%   {top: 100px; left: -1000px}
-  100% {top: 0px; left: 120%}
-}
-@keyframes animationDeux {
-  0%   {top: 100px; left: -1000px}
-  100% {top: 0px; left: 120%}
-}
-@keyframes animationTrois {
-  0%   {top: 100px; left: -1000px}
-  100% {top: 0px; left: 120%}
+  a img {
+    width: fit-content;
+    height: fit-content;
+  }
 }

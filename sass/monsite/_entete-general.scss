@@ -46,7 +46,7 @@
     z-index: 1;
 }
 
-#boiteABurger{
+#boiteABurger {
     position: absolute;
     right: 50px;
     
@@ -55,6 +55,7 @@
     margin: 0;
     z-index: 1;
 }
+
 
 #menuBurger{ 
     width: 16vw;
@@ -72,11 +73,10 @@
     justify-content: flex-start;
     
     background-color: white;
-    outline: #000000 solid 3px;
+    outline: #00527F solid 3px;
 
     transition: height 1s;
     
-
     #front {
         
         margin-bottom: 20px;
@@ -85,39 +85,44 @@
         height: 50px;
         background-color: rgba($color: #ffffff, $alpha: 0);
     
-        img{
+        img {
             width: 24px;
             
         }
 
-        div{
+        div {
             display: inline;
             margin-left: 15px;
             width: 30px;
 
-            ul{
+            ul {
                 padding: 0;
                 list-style-type: none;
+
+                a {
+                    font-family: SansationLight;
+                    color: #00527F;
+                }
             }
         }
     }
 }
 
-#menuBurger:hover, #menuBurger:hover::before{
+#menuBurger:hover, #menuBurger:hover::before {
     height: 170px;
 }
 
-#boiteABurger:hover{
+#boiteABurger:hover {
     height: 60px;
 }
 
-#menuBurger::after{
+#menuBurger::after {
     content: "";
     display: inline-block;
     width: 20px;
     height: 16vw;
     max-height: 115px;
-    border: black solid 3px;
+    border: #00527F solid 3px;
     position: absolute;
 
     //translate(37px,-75px)
@@ -126,12 +131,12 @@
 }
 
 
-#menuBurger::before{
+#menuBurger::before {
     content: "";
     display: inline-block;
     width: 15px;
     height: 60px;
-    border: black solid 3px;
+    border: #00527F solid 3px;
     position: absolute;
     
     transition: height 1s;
@@ -171,7 +176,6 @@
     #boiteABurger{
         right: 50px;
     }
-
 }
 
 // Desktop
@@ -200,5 +204,4 @@
         font-size: 5vw;
         padding: 0 175px;
     }    
-    
 }

@@ -1,5 +1,5 @@
 
-section{
+section {
     width: 100%;
     margin: 4em 0;
     margin-right: 0;
@@ -17,35 +17,33 @@ section{
 
     line-height: 0;
     z-index: 1;
-    
 }
 
-.projet{
+.projet {
     width: 80%;
     height: auto;
-    border: black solid 4px;
+    border: #00527F solid 4px;
     margin-right: 5%;
     
     //Wtf le fichier simple-grid fuck up mes trucs, pourquoi ?!
     line-height: 0;
 
-    h2{
+    h2 {
         position: absolute;
         z-index: 1;
 
         margin-left: 1.5%;
 
         color: white;
-        text-shadow: black;
+        text-shadow: #00527F;
 
         font-size: 2.5vw;
 
         //Empecher lutilisateur de cliquer sur le titre
         pointer-events: none;
-
     }
 
-    video, img{
+    video, img {
         width: 100%;
         height: 100%;
 
@@ -55,15 +53,15 @@ section{
         z-index: 0;
     }
 
-    .description{
+    .description {
         position: absolute;
         height: 45vw;
         width: 80vw;
         opacity: 0;
         transform: translate(0%,-100%);
-        background-color: black;
+        background-color: #00527F;
 
-        p{
+        p {
             //Vertical, horizontal
             margin: 10% 5%;
 
@@ -78,25 +76,25 @@ section{
            
             a{
                 pointer-events: none;
+
                 color: #49e4ff;
             }
         }
 
-        span, i{
+        span, i {
             display: inline-block;
             color: #49e4ff;
         }
     }
-    
 }
 
 
-.projet::before{
+.projet::before {
     content: "";
     width: 1rem;
     height: 45vw;
     background-color: white;
-    border: black solid 4px;
+    border: #00527F solid 4px;
 
     position: absolute;
     z-index: -1;
@@ -104,13 +102,13 @@ section{
     transform: translate(-27px,-13.5px) skewY(40deg);
 }
 
-.projet::after{
+.projet::after {
     content: "";
     width: 51.3vw;
     height: 3.1%;
 
     background-color: white;
-    border: black solid 4px;
+    border: #00527F solid 4px;
 
     position: absolute;
     z-index: -1;
@@ -118,28 +116,21 @@ section{
     transform: translateX(22%) rotate(-50deg) skewY(50deg);
 }
 
-
-
-
-
+/////////////////////////////////////////////////////////Début media querries
 // Desktop
 @media screen and (min-width: 1281px) {
-
-    section{
+    section {
        width: 85%;
        margin-left: 170px;
         
         grid-template-columns: 1fr 1fr;
     }
 
-   .projet 
-   {
-        
+   .projet {
         width: inherit;
 
         .description
         {
-      
             height: 20.5vw;
             width: 36.3vw;
 
@@ -150,12 +141,12 @@ section{
         }
    }
 
-    .projet::before{
+    .projet::before {
         content: "";
         width: 1rem;
         height: 20.35vw;
         background-color: white;
-        border: black solid 4px;
+        border: #00527F solid 4px;
     
         position: absolute;
         z-index: -1;
@@ -163,12 +154,12 @@ section{
         transform: translate(-27px,-14px) skewY(40deg);
     }
 
-    .projet::after{
+    .projet::after {
         content: "";
         width: 23.1vw;
         height: 3%;
         background-color: white;
-        border: black solid 4px;
+        border: #00527F solid 4px;
     
         position: absolute;
         z-index: -1;
@@ -180,17 +171,16 @@ section{
 }
 
 //Animation @keyframes
-.fade-in{
+.fade-in {
     animation: fadeIn 1s infinite alternate;
-    
 }
 
-@keyframes fadeIn{
-    from{
+@keyframes fadeIn {
+    from {
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 0.90;
     }
 }

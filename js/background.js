@@ -13,22 +13,31 @@ let lesTextes = {
 
 // crée des balise p et les associes aux classes avec des animations. Animation dans(footer.scss)
 
-for($i=0; $i < lesTextes.code.texte.length; $i++){
+for(let i=0; i < lesTextes.code.texte.length; i++){
     let nouveauP = document.createElement("p");
-    let nouveauTexte = document.createTextNode(lesTextes.code.texte[$i]);
+    let nouveauTexte = document.createTextNode(lesTextes.code.texte[i]);
     nouveauP.appendChild(nouveauTexte);
-    $randomAnimation = Math.random()*(5-1)+1;
-    if(($i == 1)||($i == 5)){
-        nouveauP.classList.add("animationBackground");
+   
+    switch(i){
+        case 0: nouveauP.classList.add("animationBackground");
+            break;
+        
+        case 1: nouveauP.classList.add("animationBackground2");
+            break;
+                
+        case 2: nouveauP.classList.add("animationBackground3");
+            break;
+ 
+        case 3: nouveauP.classList.add("animationBackground4");
+            break;
+        
+        case 4: nouveauP.classList.add("animationBackground5");
+            break;
+        
+        case 5: nouveauP.classList.add("animationBackground6");
+            break;
+        
+        default: break;
     }
-    else if(($i == 2)||($i == 4)){
-        nouveauP.classList.add("animationBackground2");
-    }
-    else{
-        nouveauP.classList.add("animationBackground3");
-    }
-    nouveauP.style.marginTop = $i * 120;
     document.body.prepend(nouveauP);
 }
-
-console.log(document.getElementsByClassName("animationBackground").childElementCount);

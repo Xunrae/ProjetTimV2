@@ -1,7 +1,13 @@
-.categorieProf{
+.sectionEnseignants p {
+    color: #00527F;
+    font-family: SansationLight;
+}
+
+.categorieProf {
     color: white;
 }
-#descriptionProf{
+
+#descriptionProf {
     display: flex;
     position: sticky;
     bottom: 20%;
@@ -21,7 +27,7 @@
         font-size : 1.25em;
         text-align: center;
         cursor: pointer;
-        background: black;
+        background: #00527F;
         color: white;
     }
 
@@ -30,6 +36,7 @@
         margin-top: 0.2%;
         text-align: justify;
         font-size: 14px;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     img {
@@ -38,7 +45,6 @@
         max-width: 30vw;
         margin-right: 5%;
         margin-top: 1%;
-        
     }
 }
 
@@ -69,6 +75,7 @@ h2 {
     display:block;
     margin-left: 5%;
     margin-top: 2em;
+
 
     &:nth-child(odd) {
         margin-left: 40%;
@@ -127,6 +134,5 @@ h2 {
     #divCreatif {
         margin-left: 150px;
         width: 35%;
-
     }    
 }
