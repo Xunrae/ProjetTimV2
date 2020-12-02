@@ -32,7 +32,7 @@ section {
         position: absolute;
         z-index: 1;
 
-        margin-left: 4vw;
+        margin-left: 1.5%;
 
         color: white;
         text-shadow: #00527F;
@@ -74,8 +74,9 @@ section {
             
             pointer-events: none;
            
-            a {
-                pointer-events: all;
+            a{
+                pointer-events: none;
+
                 color: #49e4ff;
             }
         }
@@ -112,7 +113,7 @@ section {
     position: absolute;
     z-index: -1;
 
-    transform: translate(-129%,-94%) rotate(-50deg) skewY(50deg);
+    transform: translateX(22%) rotate(-50deg) skewY(50deg);
 }
 
 /////////////////////////////////////////////////////////Début media querries
@@ -133,11 +134,7 @@ section {
             height: 20.5vw;
             width: 36.3vw;
 
-            h2 {
-                margin-left: 1.7vw;
-            }
-
-            p {
+            p{
                 margin: 15% 5%;
                 font-size: 1vw;
             }
@@ -167,7 +164,9 @@ section {
         position: absolute;
         z-index: -1;
     
-        transform: translate(-129.5%,-98%) rotate(-50deg) skewY(50deg);
+        margin-top: -22.4%;
+        
+        transform: translateX(23%) rotate(-50deg) skewY(50deg);
     }
 }
 
