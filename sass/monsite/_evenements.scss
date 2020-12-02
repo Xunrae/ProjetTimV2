@@ -16,6 +16,14 @@
     text-align: justify;
 }
 
+.b, .d, .f, .g{
+    display:flex;
+    align-items: center;
+    overflow-y:scroll;
+    
+    &::-webkit-scrollbar{display:none;}
+}
+
 .b p, .d p, .f p, .g p {
     margin: 0;
     color: #00527F;

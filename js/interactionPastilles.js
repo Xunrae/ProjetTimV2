@@ -49,8 +49,8 @@ function ouvrirFenetre(){
     //tous les h3 Session, pour pouvoir aligner la description à la session
     const lesSessions = document.getElementsByTagName("h3")
 
-    let textTarget = event.target.innerText;
-    let codeTarget = textTarget.slice(0,7);
+    //le code de la cible "XXX-XXX" est le code du cours.
+    let codeTarget = event.target.dataset.code;
 
     //crée un array avec le contenu json
     let arrayData = Object.entries(jsonData);
@@ -71,16 +71,21 @@ function ouvrirFenetre(){
     div.classList.add("animOuverture");
 
 
-    //paragraphe pour div
+    //paragraphe pour nom du cours
     let nomCours = document.createElement("h4");
     nomCours.setAttribute("class", "nomCoursDescription");
 
+    //paragraphe pour code du cours
+    let codeCours = document.createElement("h5");
+    codeCours.setAttribute("class", "nomCoursDescription");
 
     //paragraphe pour div
     let para = document.createElement("p");
 
     //va chercher le nom du cours dans son json
     let contenuNomCours = document.createTextNode(arrayData[noSession][1][codeTarget].NomCours.slice(11,100));
+    //va chercher le code du cours dans son json
+    let contenuCodeCours = document.createTextNode(arrayData[noSession][1][codeTarget].NomCours.slice(0,7));
     //va chercher la description du cours dans le contenu json
     let contenu = document.createTextNode(arrayData[noSession][1][codeTarget].Description);
 
@@ -91,8 +96,10 @@ function ouvrirFenetre(){
 
     //associe elements assemblés
     nomCours.appendChild(contenuNomCours);
+    codeCours.appendChild(contenuCodeCours);
     para.appendChild(contenu);
     div.appendChild(nomCours);
+    div.appendChild(codeCours);
     div.appendChild(para);
     div.appendChild(fermeture);
     laSession.parentNode.appendChild(div);

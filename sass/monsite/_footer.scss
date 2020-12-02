@@ -2,14 +2,15 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-#colophon{
+  z-index: 100;
   background-color: #00527F;
   padding-top: 3px;
+  display:flex;
+  justify-content:center;
 }
+
 #colophon div div { 
-  margin: 0 auto;
-  width: 210px !important;
+  width: fit-content !important;
 
   a img {
     width: fit-content;

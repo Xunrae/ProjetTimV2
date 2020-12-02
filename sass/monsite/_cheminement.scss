@@ -28,13 +28,12 @@ html {
 
 .rond {
   margin: 0 0 30px 30px;
-  vertical-align: middle;
   width: 200px;
   height: 200px;
   border: solid #00527F;
   border-radius: 100%;
-  align-content: center;
   position: relative;
+  vertical-align: middle;
 
   &:before {
     width: 200px;
@@ -65,9 +64,11 @@ body {
   
   .noSession {
     color: white;
+    text-shadow: -0.5px -0.5px 0 #679cff, -1px -1px 0 #679cff, -1.5px -1.5px 0 #679cff, -2px -2px 0 #679cff, -2.5px -2.5px 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
   }
 
   #descriptionCours {
+    scrollbar-width:none;
     position: absolute;
     overflow-y:scroll;
     overflow-x:hidden;
@@ -87,6 +88,10 @@ body {
       display:block;
     }
 
+    h5{
+      font-size: 0.9em;
+    }
+
     span {
       position: absolute;
       top:20px;
@@ -100,33 +105,37 @@ body {
       background: #00527F;
       color: white;
     }
+
+    &::-webkit-scrollbar{display:none;}
   
-    &::after {
-      content:"";
-      position:absolute;
-      top:0;
-      left:0;
-      width: 5px;
-      height:5px;
-      border-radius: 3px;
-      animation: animBorderDescriptAfter 5s infinite;
-    }
+    //!!!!!!!!!!!!! Animation de petits éléments qui tournent autour de la description
+    // problème avec overflow scroll, et ça dévie l'attention du texte : laissé en commentaire
+    // &::after {
+    //   content:"";
+    //   position:absolute;
+    //   top:0;
+    //   left:0;
+    //   width: 5px;
+    //   height:5px;
+    //   border-radius: 3px;
+    //   animation: animBorderDescriptAfter 5s infinite;
+    // }
   
-    &::before {
-      content:"";
-      position:absolute;
-      top:0;
-      left:0;
-      width: 5px;
-      height:5px;
-      border-radius: 10px;
-      animation: animBorderDescriptBefore 5s infinite;
-    }
+    // &::before {
+    //   content:"";
+    //   position:absolute;
+    //   top:0;
+    //   left:0;
+    //   width: 5px;
+    //   height:5px;
+    //   border-radius: 10px;
+    //   animation: animBorderDescriptBefore 5s infinite;
+    // }
   }
 }
 
 .animOuverture {
-  animation: animDescription 0.5s forwards;
+  animation: animDescription 1s forwards;
 }
 
 @keyframes animDescription {
@@ -157,167 +166,167 @@ body {
   }
 }
 
-@keyframes animBorderDescriptAfter {
-  from {
-    left:0%; 
-    top:0; 
-    transform: rotate(0deg); 
-    background-color: blue;
-  }
+// @keyframes animBorderDescriptAfter {
+//   from {
+//     left:0%; 
+//     top:0; 
+//     transform: rotate(0deg); 
+//     background-color: blue;
+//   }
 
-  13% {
-    width: 35px;
-  }    
+//   13% {
+//     width: 35px;
+//   }    
   
-  20% {
-    transform: rotate(0deg);
-    background-color: green;
-  }
+//   20% {
+//     transform: rotate(0deg);
+//     background-color: green;
+//   }
 
-  22% {
-    transform: rotate(90deg);
-    background-color: #00527F;
-    width: 5px;
-  }
+//   22% {
+//     transform: rotate(90deg);
+//     background-color: #00527F;
+//     width: 5px;
+//   }
 
-  25% {
-    left:99.6%;
-    top:0;
-    background-color: yellow;
-  }
+//   25% {
+//     left:99.6%;
+//     top:0;
+//     background-color: yellow;
+//   }
       
-  45% {
-    transform: rotate(90deg);
-    background-color: red;
-  }
+//   45% {
+//     transform: rotate(90deg);
+//     background-color: red;
+//   }
   
-  47% {
-    transform: rotate(180deg);
-    background-color: #00527F;
-  }
+//   47% {
+//     transform: rotate(180deg);
+//     background-color: #00527F;
+//   }
 
-  50% {
-    left:99.6%;
-    top:99%;
-    background-color: orange;
-    width: 5px;
-  }
+//   50% {
+//     left:99.6%;
+//     top:99%;
+//     background-color: orange;
+//     width: 5px;
+//   }
 
-  63% {
-    width: 35px;
-  }
+//   63% {
+//     width: 35px;
+//   }
 
-  70% {
-    transform: rotate(180deg);
-    background-color: green;
-  }
+//   70% {
+//     transform: rotate(180deg);
+//     background-color: green;
+//   }
 
-  72% {
-    transform: rotate(270deg);
-    background-color: purple;
-    width: 5px;
-  }
+//   72% {
+//     transform: rotate(270deg);
+//     background-color: purple;
+//     width: 5px;
+//   }
 
-  75% {
-    left:0%;
-    top:99%;
-    background-color: #00527F;
-  }
+//   75% {
+//     left:0%;
+//     top:99%;
+//     background-color: #00527F;
+//   }
 
-  97% {
-    transform: rotate(270deg);
-    background-color: blue;
-  }
+//   97% {
+//     transform: rotate(270deg);
+//     background-color: blue;
+//   }
 
-  to {
-    left:0%;
-    top:0%;
-    transform: rotate(360deg);
-    background-color: blue;
-  }
-}
+//   to {
+//     left:0%;
+//     top:0%;
+//     transform: rotate(360deg);
+//     background-color: blue;
+//   }
+// }
 
-@keyframes animBorderDescriptBefore {
-  from {
-    left:99.6%; 
-    top:99%; 
-    transform: rotate(0deg); 
-    background-color: blue;
-  }
+// @keyframes animBorderDescriptBefore {
+//   from {
+//     left:99.6%; 
+//     top:99%; 
+//     transform: rotate(0deg); 
+//     background-color: blue;
+//   }
 
-  13% {
-    width: 35px;
-  }  
+//   13% {
+//     width: 35px;
+//   }  
 
-  20% {
-    transform: rotate(0deg);
-    background-color: green;
-  }
+//   20% {
+//     transform: rotate(0deg);
+//     background-color: green;
+//   }
 
-  22% {
-    transform: rotate(90deg);
-    background-color: #00527F;
-    width: 5px;
-  }
+//   22% {
+//     transform: rotate(90deg);
+//     background-color: #00527F;
+//     width: 5px;
+//   }
 
-  25% {
-    left:0;
-    top:99%;
-    background-color: yellow;
-  }
+//   25% {
+//     left:0;
+//     top:99%;
+//     background-color: yellow;
+//   }
 
-  45% {
-    transform: rotate(90deg);
-    background-color: red;
-  }
+//   45% {
+//     transform: rotate(90deg);
+//     background-color: red;
+//   }
 
-  47% {
-    transform: rotate(180deg);
-    background-color: #00527F;
-  }
+//   47% {
+//     transform: rotate(180deg);
+//     background-color: #00527F;
+//   }
 
-  50% {
-    left:0;
-    top:0%;
-    background-color: orange;
-    width: 5px;
-  }
+//   50% {
+//     left:0;
+//     top:0%;
+//     background-color: orange;
+//     width: 5px;
+//   }
 
-  63% {
-    width: 35px;
-  }
+//   63% {
+//     width: 35px;
+//   }
 
-  70% {
-    transform: rotate(180deg);
-    background-color: green;
-  }
+//   70% {
+//     transform: rotate(180deg);
+//     background-color: green;
+//   }
 
-  72% {
-    transform: rotate(270deg);
-    background-color: purple;
-    width: 5px;}
+//   72% {
+//     transform: rotate(270deg);
+//     background-color: purple;
+//     width: 5px;}
 
-  75% {
-    left:99.6%;
-    top:0%;
-    background-color: #00527F;
-  }
+//   75% {
+//     left:99.6%;
+//     top:0%;
+//     background-color: #00527F;
+//   }
 
-  97% {
-    transform: rotate(270deg);
-    background-color: blue;
-  }
+//   97% {
+//     transform: rotate(270deg);
+//     background-color: blue;
+//   }
 
-  to {
-    left:99.6%;
-    top:99%;
-    transform: rotate(360deg);
-    background-color: blue;
-  }
-}
+//   to {
+//     left:99.6%;
+//     top:99%;
+//     transform: rotate(360deg);
+//     background-color: blue;
+//   }
+// }
 
 .cheminementrond hr {
-  border: 4px solid white;
+  border: 2px solid white;
 }
 
 /////////////////////////////////////////////////////////Début media querries
@@ -328,6 +337,7 @@ body {
     width: 80%;
     top: 50px;
   }
+  .rond{margin:0 30% 5%;}
 } 
 
 // Desktop

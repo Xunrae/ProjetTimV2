@@ -76,7 +76,7 @@
             "Prealable":"Animation et interactivité Web"
         },
         "582-3J3":{
-            "NomCours": "582-3J3<br>Création de jeu 3D (75h)",
+            "NomCours": "582-3J3<br>Création de jeu 3D",
             "Description":"Ce cours permet à l’étudiant d’intégrer différents types de médias à l’aide des fonctionnalités d’un logiciel d’intégration 3D. L’étudiant est amené à contrôler et à animer les éléments d’une application multimédia par programmation dans un environnement 3D.Ce cours initie l’étudiant à l’utilisation d’un environnement d’intégration de la 3D en temps réel. L’accent est d’abord mis sur l’apprentissage des notions de base de la3D-temps réel et de l’intégration 3D (systèmes de coordonnées, vecteurs, types et propriétés d’objets 3D, caméra, rendu en temps réel, etc.).Ensuite l’étudiant est amené à maîtriser les outils et les fonctionnalités de base d’un logiciel d’intégration 3D, afin d’importer et prendre en charge des éléments 3D, paramétrer les comportements ainsi que programmer l’interactivité.Enfin, par la création d’un prototype simple, l’étudiant est à même d’apprendre les concepts et les techniques de base reliées à l’intégration d’un jeu numérique.",
             "Heures":75,
             "Nbunite":2.67,

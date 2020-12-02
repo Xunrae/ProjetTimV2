@@ -81,13 +81,13 @@
 .cube::after {
   content: '';
   display: inline-block;
-  border: 2px solid #00527F;
+  border: 3px solid #00527F;
   width: 16px;
-  height: 7.35em;
-  transform: skewY(50deg);
+  height: 7.37em;
+  transform: skewY(35deg);
   position: absolute;
   top: -12%;
-  left: -18px;
+  left: -22px;
   background: white;
   transition: background-color 0.5s;
 }
