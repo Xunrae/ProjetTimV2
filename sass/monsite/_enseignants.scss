@@ -20,7 +20,7 @@
     span {
         position: absolute;
         top: 2vw;
-        right: 6vw;
+        right: 4vw;
         height: 30px;
         width: 30px; 
         border-radius: 15px;
@@ -41,10 +41,12 @@
 
     img {
         border-radius:10px;
-        height: 28vw;
+        height: 20vw;
+        width: 20vw;
         max-width: 30vw;
-        margin-right: 5%;
+        margin-right: 4%;
         margin-top: 1%;
+        object-fit: cover;
     }
 }
 
