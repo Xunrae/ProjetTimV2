@@ -46,7 +46,7 @@
     z-index: 1;
 }
 
-#boiteABurger{
+#boiteABurger {
     position: absolute;
     right: 50px;
     
@@ -56,7 +56,7 @@
     z-index: 1;
 }
 
-#menuBurger{ 
+#menuBurger { 
     width: 120px;
     height: 60px;
     overflow: hidden;
@@ -80,17 +80,17 @@
         height: 50px;
         background-color: rgba($color: #ffffff, $alpha: 0);
     
-        img{
+        img {
             width: 24px;
             
         }
 
-        div{
+        div {
             display: inline;
             margin-left: 15px;
             width: 30px;
 
-            ul{
+            ul {
                 padding: 0;
                 list-style-type: none;
 
@@ -103,15 +103,15 @@
     }
 }
 
-#menuBurger:hover, #menuBurger:hover::before{
+#menuBurger:hover, #menuBurger:hover::before {
     height: 170px;
 }
 
-#boiteABurger:hover{
+#boiteABurger:hover {
     height: 60px;
 }
 
-#menuBurger::after{
+#menuBurger::after {
     content: "";
     display: inline-block;
     width: 20px;
@@ -124,7 +124,7 @@
 }
 
 
-#menuBurger::before{
+#menuBurger::before {
     content: "";
     display: inline-block;
     width: 15px;
@@ -197,5 +197,4 @@
         font-size: 5vw;
         padding: 0 175px;
     }    
-    
 }
