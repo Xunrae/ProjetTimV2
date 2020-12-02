@@ -10,7 +10,7 @@
         },
     
         "582-1M2":{
-            "NomCours": "582-1M2<br>Conception graphique et imagerie matricielle",
+            "NomCours": "582-1M2<br>Conception graphique <br>et</br> imagerie matricielle",
             "Description":"Ce cours initie l’étudiant aux rudiments de la conception et de la communication graphique ainsi qu’au traitement des images fixes matricielles. On y aborde les notions de base sur le langage graphique, la couleur, le mode d’organisation picturale en lien avec le design d’une image ou d’une interface. L’apprentissage d’un processus de conception structuré et de techniques d’idéation permet à l’étudiant de faire émerger des concepts créatifs respectant des objectifs de communication précis et le public cible. L’étudiant est amené à exploiter de façon créative et efficace les diverses fonctions d’un logiciel de traitement de l’image numérique, à utiliser des techniques de montage et de découpage d’images et à appliquer des effets spéciaux diversifiés. Le cours aborde plus particulièrement les notions de photoréalisme ainsi que des techniques de travail permettant l’intégration harmonieuse d’images dans d’autres logiciels multimédias. De plus, les méthodes de travail pour la réalisation de maquettes graphiques d’un document multimédia sont abordées. Les particularités de la fonction de travail liées au design graphique et au traitement des images fixes sont présentées, de même que les compétences techniques et comportementales associées.",
             "Heures":90,
             "Nbunite": 3,
@@ -28,7 +28,7 @@
         },
 
         "582-1J1":{
-            "NomCours": "582-1J1<br>Animation et interactivité en jeu ",
+            "NomCours": "582-1J1<br>Animation <br>et</br> interactivité en jeu ",
             "Description":"Ce cours est consacré aux concepts de base nécessaires à la création d’un jeu numérique. Le cours porte, d’une part, sur l’animation des médias : l’étudiant y apprend à importer et à intégrer des médias dans un environnement de création de jeu. De plus, il se familiarise avec les techniques de création d’animations à partir d’images simples et des feuilles de « sprites ». D’autre part, le cours couvre la gestion des interactions : l’étudiant y est initié aux concepts de base de l’interactivité dans un contexte de jeu, ainsi qu’aux techniques de conception, de codification et de vérification des algorithmes nécessaires à cette fin.Dans ce cours, l’étudiant est également initié à l’environnement matériel et technologique dans lequel il évoluera tout au long de sa formation et de sa carrière. Les particularités de la fonction de travail liées au domaine du jeu sont présentées, de même que les compétences techniques et comportementales associées.",
             "Heures":75,
             "Nbunite":2.67,
@@ -39,7 +39,7 @@
 
     "Session2": {
         "582-2M4":{
-            "NomCours": "582-2M4<br>Conception graphique et imagerie vectorielle",
+            "NomCours": "582-2M4<br>Conception graphique <br>et</br> imagerie vectorielle",
             "Description":"Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à la conception, à la communication graphique et au traitement des images fixes vectorielles.L’étudiant développe un concept créatif décliné en plusieurs volets. L’étudiant apprend à utiliser la typographie selon les règles de l’art. Il a l’opportunité d’approfondir sa maîtrise de la communication graphique afin de produire un message adapté au public cible.Pour ce faire, le cours aborde la conception d’illustrations et des techniques de travail permettant l’intégration harmonieuse d’images dans d’autres logiciels multimédias. L’étudiant apprendra à créer des agencements graphiques et typographiques comme des logos, des icônes web ainsi que des éléments de jeu en 2D.Enfin, l’étudiant est amené à argumenter et justifier ses choix créatifs.",
             "Heures":90,
             "Nbunite":3,
@@ -48,7 +48,7 @@
            
         },
         "582-2W2": {
-            "NomCours": "582-2W2<br>Animation et interactivité Web",
+            "NomCours": "582-2W2<br>Animation <br>et</br> interactivité Web",
             "Description":"Ce cours permet à l’étudiant d’acquérir les compétences de base requises pour programmer l’interactivité de l’interface-utilisateur d’une application multimédia en ligne. Les notions abordées dans les cours « 582-1W1 Mise en page Web » et « 582-1J1 Animation et interactivité en jeu » sont approfondies en les appliquant dans un contexte de création de sites Web interactifs, exécutables sur un poste client. L’étudiant apprend à créer et afficher des éléments graphiques par programmation et à appliquer des effets de transition et d’animation. L’accent est mis sur la gestion d’événements, le développement d’interfaces interactives et l’adaptabilité multiplateformes. L’étudiant apprend enfin à installer et utiliser les outils de développement adéquats pour améliorer sa productivité dans le contexte de la chaîne de production Web.",
             "Heures":75,
             "Nbunite":2.67,
@@ -106,7 +106,7 @@
         },
         
         "582-4PA":{
-            "NomCours": "582-4PA<br>Interfaces Web réactives et animées ",
+            "NomCours": "582-4PA<br>Interfaces Web réactives <br>et</br>animées ",
             "Description":"En session 4, l’étudiant doit choisir entre ce cours et le cours Animation 3D.Dans ce cours, l’étudiant ayant un intérêt plus marqué pour la programmation a la possibilité d’approfondir les acquis des cours de la séquence Web en s’initiant à des technologies permettant de réaliser des applications riches du côté du client.Il apprendra à utiliser un cadriciel côté client pour produire un site Web dynamique dont l’interface utilisateur réactive répond en temps réel aux modifications d’états des données de l’application. L’intégration d’effets de transition et d’animation dans l’interface-utilisateur est également couverte.",
             "Heures":75,
             "Nbunite":2.33,
@@ -127,7 +127,7 @@
     "Session5": {
 
         "393-5E1":{
-            "NomCours": "393-5E1<br>Méthodes de recherche et préparation au marché du travail",
+            "NomCours": "393-5E1<br>Méthodes de recherche <br>et</br> préparation au marché du travail",
             "Description":"Ce cours permet à l’étudiant d’acquérir des habiletés en recherche, en organisation et en transmission d’informations numériques. L’étudiant est initié aux notions de base liées à la veille informationnelle et apprend les fondements de la recherche d’informations par le biais de l’emploi des nouvelles technologies et des sources spécialisées. Il est aussi amené à développer son esprit critique afin d’évaluer la qualité de l’information recueillie.Les apprentissages de ce cours visent à permettre à l’étudiant de se situer quant à son orientation professionnelle et d’identifier le sujet de son projet de fin d’études et d’en déterminer les objectifs de recherche en lien avec son choix vocationnel. Il prépare son intégration sur le marché du travail.",
             "Heures":45,
             "Nbunite":1.33,
@@ -135,7 +135,7 @@
             "Prealable":"Aucun"
         },
         "350-5N1":{
-            "NomCours": "350-5N1<br>Communication et dynamique d’une équipe de travail",
+            "NomCours": "350-5N1<br>Communication <br>et</br> dynamique d’une équipe de travail",
             "Description":"Ce cours permet à l’étudiant de développer ses habiletés en matière de communication interpersonnelle et de mieux interagir dans une équipe multimédia. L’étudiant est appelé à développer sa capacité́ à communiquer et à entrer en relation avec autrui sur les plans personnel et professionnel, notamment avec ses collègues de travail ou ses supérieurs immédiats. Les notions essentielles acquises dans ce cours s’appliquent à la prévention des conflits interpersonnels et à la résolution de problèmes d’équipe notamment dans le cours de Projet Web. De plus, ce cours initie l’étudiant à la présentation du produit tout en favorisant les interactions et la collaboration avec les clients.",
             "Heures":45,
             "Nbunite":1.33,
@@ -152,7 +152,7 @@
             "Prealable":"Conception d’interfaces,développement Web et Communication et dynamique d’une équipe de travail"
         },
         "582-5MB":{
-            "NomCours": "582-5MB<br>Technologies émergentes et avancées – volet Création",
+            "NomCours": "582-5MB<br>Technologies émergentes <br>et</br> avancées – volet Création",
             "Description":"En session 5, l’étudiant doit choisir entre ce cours et le cours Technologies émergentes et avancées – volet Programmation.Dans ce cours, l’étudiant davantage intéressé par les aspects créatifs du multimédia est amené à explorer et tester des approches novatrices et émergentes en multimédia telles que : système de captation de mouvement, réalité virtuelle, réalité augmentée, environnements immersifs et habillage vidéo, vidéo 360 degrés",
             "Heures":60,
             "Nbunite":2,
