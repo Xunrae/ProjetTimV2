@@ -1,6 +1,11 @@
 .sectionEnseignants p {
     color: #00527F;
     font-family: SansationLight;
+    font-size: 1.39em;
+    font-weight: bold;
+  
+
+    
 }
 
 .categorieProf {
@@ -17,6 +22,7 @@
     padding: 30px;
     z-index: 10;
     background: rgba(255,255,255, 0.95);
+    width: 50%;
     overflow-y:scroll;
     
     &::-webkit-scrollbar{display:none;}
@@ -41,6 +47,8 @@
         text-align: justify;
         font-size: 14px;
         font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        align-items : center;
     }
 
     img {
@@ -81,7 +89,12 @@ h2 {
     display:block;
     margin-left: 5%;
     margin-top: 2em;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        line-height: 0.3em;
+    }
 
     &:nth-child(odd) {
         margin-left: 40%;
@@ -97,6 +110,7 @@ h2 {
 @media screen and (max-width: 600px) {
     #descriptionProf {
         bottom: 5%;
+    
     }
 
     #divCreatif {
@@ -119,8 +133,12 @@ h2 {
 @media screen and (max-width: 850px) {
     #descriptionProf p {
         font-size: 12px;
-    }
     
+    }
+    #descriptionProf  {
+        width: 75%;
+    }
+
     #divLogique {
         padding-left: 10px;
         width: 47%;
@@ -140,5 +158,10 @@ h2 {
     #divCreatif {
         margin-left: 150px;
         width: 35%;
-    }    
+    }
+
+    #descriptionProf  {
+        width: 75%;
+    }
+    
 }
