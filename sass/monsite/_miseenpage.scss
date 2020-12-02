@@ -6,4 +6,5 @@
 body {
     font-family: "Roboto-Regular";
         src: url('../fonts/Roboto-Regular.ttf');
+    &::-webkit-scrollbar{width:20px}
 }
