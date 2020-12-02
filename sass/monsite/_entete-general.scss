@@ -37,6 +37,7 @@
     font-family: 'Bruno Ace SC Regular'; 
         src: url('../fonts/Bruno Ace SC Regular.ttf');
     color: white;
+    text-shadow: -0.5px -0.5px 0 #679cff, -1px -1px 0 #679cff, -1.5px -1.5px 0 #679cff, -2px -2px 0 #679cff, -2.5px -2.5px 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
     font-size: 3vw;
     font-weight: 100;
     line-height: 90%;
@@ -58,7 +59,7 @@
 
 
 #menuBurger{ 
-    width: 16vw;
+    width: 120px;
     max-width: 120px;
     //120px
     height: 60px;
@@ -120,13 +121,13 @@
     content: "";
     display: inline-block;
     width: 20px;
-    height: 16vw;
+    height: 115px;
     max-height: 115px;
     border: #00527F solid 3px;
     position: absolute;
 
     //translate(37px,-75px)
-    transform: translate(150%,-60%) rotate(90deg) skewY(-40deg);
+    transform: translate(37px,-75px) rotate(90deg) skewY(-40deg);
     background-color: white;
 }
 
@@ -155,8 +156,8 @@
     font-family: 'Bruno Ace SC Regular'; 
     src: url('../fonts/Bruno Ace SC Regular.ttf');
     color: white;
-    //text-shadow: -5px -5px 0px #7decff,-10px -10px 0px #679cff;
-    text-shadow: -1px -1px 0 #679cff, -2px -2px 0 #679cff, -3px -3px 0 #679cff, -4px -4px 0 #679cff, -5px -5px 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
+    text-shadow: -0.1vw -0.1vw 0 #679cff, -0.2vw -0.2vw 0 #679cff, -0.3vw -0.3vw 0 #679cff, -0.4vw -0.4vw 0 #679cff, -0.5vw -0.5vw 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
+    //-webkit-text-stroke: #00527F 2px;
     font-size: 5vw;
     padding: 0 10vw;
     margin: 0;
@@ -177,6 +178,89 @@
 
     #boiteABurger{
         right: 50px;
+        top: 80px;
+        
+        
+    }
+
+    #menuBurger{ 
+        width: 70px;
+        height: 40px;
+      
+        overflow: hidden;
+        
+        align-self: center;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        background-color: white;
+        outline: #00527F solid 3px;
+    
+        transition: height 1s;
+        
+        #front {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0;
+            padding: 0;
+            background-color: rgba($color: #ffffff, $alpha: 0);
+        
+            img {
+                width: 20px;
+                margin-left: 10px;
+                margin-top: 12px;
+                
+            }
+    
+            div {
+                display: inline;
+                width: 30px;
+    
+                ul {
+                    padding-left: 11px;
+                    margin: 0;
+                    list-style-type: none;
+    
+                    a {
+                        font-family: SansationLight;
+                        font-size: 10px;
+                        color: #00527F;
+                    }
+                }
+            }
+        }
+    }
+    
+    #menuBurger:hover, #menuBurger:hover::before {
+        height: 140px;
+    }
+    
+    #boiteABurger:hover {
+        height: 60px;
+    }
+    
+    #menuBurger::after {
+        width: 10px;
+        height: 70px;
+        
+        transform: translate(21px,-46px) rotate(90deg) skewY(-40deg);
+        background-color: white;
+    }
+    
+    
+    #menuBurger::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 38px;
+        border: #00527F solid 3px;
+        position: absolute;
+        
+        transition: height 1s;
+        transform: translate(-16px,-10px) skewY(50deg) ;
+        background-color: white;
     }
 }
 
