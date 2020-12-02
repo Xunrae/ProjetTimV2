@@ -57,8 +57,12 @@
 }
 
 #menuBurger{ 
-    width: 120px;
+    width: 16vw;
+    max-width: 120px;
+    //120px
     height: 60px;
+    //max-height: 60px;
+    //60px
     overflow: hidden;
     
     align-self: center;
@@ -77,7 +81,7 @@
         
         margin-bottom: 20px;
         padding: 1em;
-        width: 120px;
+        width: 16vw;
         height: 50px;
         background-color: rgba($color: #ffffff, $alpha: 0);
     
@@ -111,11 +115,13 @@
     content: "";
     display: inline-block;
     width: 20px;
-    height: 115px;
+    height: 16vw;
+    max-height: 115px;
     border: black solid 3px;
     position: absolute;
-    
-    transform: translate(37px,-75px) rotate(90deg) skewY(-40deg) ;
+
+    //translate(37px,-75px)
+    transform: translate(150%,-60%) rotate(90deg) skewY(-40deg);
     background-color: white;
 }
 
