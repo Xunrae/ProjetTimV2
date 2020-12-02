@@ -155,6 +155,8 @@
     font-family: 'Bruno Ace SC Regular'; 
     src: url('../fonts/Bruno Ace SC Regular.ttf');
     color: white;
+    //text-shadow: -5px -5px 0px #7decff,-10px -10px 0px #679cff;
+    text-shadow: -1px -1px 0 #679cff, -2px -2px 0 #679cff, -3px -3px 0 #679cff, -4px -4px 0 #679cff, -5px -5px 0 #679cff, 2px 2px 2px rgba(65,81,206,0);
     font-size: 5vw;
     padding: 0 10vw;
     margin: 0;
