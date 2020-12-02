@@ -1,12 +1,12 @@
 let lesTextes = {
     code:{
         texte:[
-            "$tousCours = json_decode(file_get_contents($fichier), true);",
-            "document.createTextNode(arrayData[noSession][1][codeTarget].Description);",
-            "this.addEventListener('click',ouvrirFenetre,false);",
-            "document.createTextNode('Pondération : '+arrayData[noSession][1][codeTarget].Pondération);",
-            "<p data-session='<?= $noSession?>'><?= $unCours['NomCours']?></p>",
-            "<div class='projet' title='Cliquez pour afficher la description'>"
+            "gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);",
+            "rb.velocity = new Vector3(0, 10, 0);",
+            "$('#output').html($('#element').offset().top - $(window).scrollTop());",
+            "foreach($array as $key=>$value)",
+            "<!DOCTYPE glossary PUBLIC '-//OASIS//DTD DocBook V3.1//EN'>",
+            "SELECT Count(*) AS DistinctCountries FROM (SELECT DISTINCT Country FROM Customers);"
         ]
     }
 };
