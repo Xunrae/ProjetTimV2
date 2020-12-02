@@ -15,10 +15,14 @@
 			<div class="cheminementrond">
 				<h3 class="noSession"><?="Session ".$noSession?></h3>
 			
-				<?php foreach($session as $unCours){
-					?>
-					<button class="rond" data-session="<?= $noSession?>">
-						<p data-session="<?= $noSession?>"><?= $unCours["NomCours"]?></p>
+				<?php 
+					foreach($session as $unCours){
+				?>
+					<!-- data-session = le numero de la session, data-code = le code du cours -->
+					<button class="rond" data-session="<?= $noSession?>" data-code="<?= substr($unCours["NomCours"],0,7)?>">
+						<p data-session="<?= $noSession?>" data-code="<?= substr($unCours["NomCours"],0,7)?>">
+							<?= substr($unCours["NomCours"],11)?>
+						</p>
 					</button>
 				<?php }?>
 				<hr>
