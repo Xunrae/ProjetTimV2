@@ -6,5 +6,26 @@
 body {
     font-family: "Roboto-Regular";
         src: url('../fonts/Roboto-Regular.ttf');
-    &::-webkit-scrollbar{width:20px}
+
+// css de la barre de défilement
+    /* largeur de la barre entière */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* le rail qui contient le bouton */
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0px 0px 3px black;
+    }
+    
+    /* le bouton */
+    &::-webkit-scrollbar-thumb {
+        box-shadow: inset 2px 0px 3px black;
+        background: #00527F;
+    }
+    
+    /* quand on hover sur le bouton */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #0052AF; 
+    }
 }

@@ -2,100 +2,112 @@
   z-index: -2;
   color: #09ff00;
   left: -100%;
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed;
-  animation: animation1 20s 5s infinite forwards;
+  animation: animation1 20s 2s infinite;
+  animation-timing-function: linear;
   transform: skewX(25deg) rotate(-1deg);
+  text-shadow: 0px 0px 0px #FFF, 0 0 10px #FFF, 5px 2px 5px #FFF, 0 0 15px #09ff00, 0 0 25px #09ff00, 0 0 35px #09ff00, 0 0 45px #09ff00, 0 0 60px #09ff00, 2px 2px 2px rgba(206,89,55,0);
 }
 
 .animationBackground2 {
   z-index: -2;
   color: #09ff00;
   left: -100%;
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed;
-  animation: animation2 15s 10s infinite forwards;
+  animation: animation2 15s 10s infinite;
+  animation-timing-function: linear;
   transform: skewX(25deg) rotate(-1deg);
+  text-shadow: 0px 0px 0px #FFF, 0 0 10px #FFF, 5px 2px 5px #FFF, 0 0 15px #09ff00, 0 0 25px #09ff00, 0 0 35px #09ff00, 0 0 45px #09ff00, 0 0 60px #09ff00, 2px 2px 2px rgba(206,89,55,0);
 }
 
 .animationBackground3 {
   z-index: -2;
   left: -100%;
   color: #09ff00;
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed;
-  animation: animation3 25s infinite forwards;
+  animation: animation3 15s infinite;
+  animation-timing-function: linear;
   transform: skewX(25deg) rotate(-1deg);
+  text-shadow: 0px 0px 0px #FFF, 0 0 10px #FFF, 5px 2px 5px #FFF, 0 0 15px #09ff00, 0 0 25px #09ff00, 0 0 35px #09ff00, 0 0 45px #09ff00, 0 0 60px #09ff00, 2px 2px 2px rgba(206,89,55,0);
 }
 
 .animationBackground4 {
   z-index: -2;
   color: #09ff00;
   left: -100%;
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed;
-  animation: animation4 17s 30s infinite forwards;
+  animation: animation4 17s 6s infinite;
+  animation-timing-function: linear;
   transform: skewX(25deg) rotate(-1deg);
+  text-shadow: 0px 0px 0px #FFF, 0 0 10px #FFF, 5px 2px 5px #FFF, 0 0 15px #09ff00, 0 0 25px #09ff00, 0 0 35px #09ff00, 0 0 45px #09ff00, 0 0 60px #09ff00, 2px 2px 2px rgba(206,89,55,0);
 }
 
 .animationBackground5 {
   z-index: -2;
   color: #09ff00;
   left: -100%;
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed;
-  animation: animation5 20s 25s infinite forwards;
+  animation: animation5 20s 15s infinite;
+  animation-timing-function: linear;
   transform: skewX(25deg) rotate(-1deg);
+  text-shadow: 0px 0px 0px #FFF, 0 0 10px #FFF, 5px 2px 5px #FFF, 0 0 15px #09ff00, 0 0 25px #09ff00, 0 0 35px #09ff00, 0 0 45px #09ff00, 0 0 60px #09ff00, 2px 2px 2px rgba(206,89,55,0);
 }
 
 .animationBackground6 {
   z-index: -2;
-  color: #00527F;
+  color: #09ff00;
   left: -100%;
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   position: fixed;
-  animation: animation6 30s 4s infinite forwards;
+  animation: animation6 30s 4s infinite;
+  animation-timing-function: linear;
   transform: skewX(25deg) rotate(-1deg);
+  text-shadow: 0px 0px 0px #FFF, 0 0 10px #FFF, 5px 2px 5px #FFF, 0 0 15px #09ff00, 0 0 25px #09ff00, 0 0 35px #09ff00, 0 0 45px #09ff00, 0 0 60px #09ff00, 2px 2px 2px rgba(206,89,55,0);
 }
 
 @keyframes animation1 {
-  0%   {top: 4vh; left: -60vw}
-  100% {top: -3vh; left: 120vw}
+  0%   {top: 4vh; left: -40vw}
+  100% {top: -3vh; left: 140vw}
 }
 
 @keyframes animation2 {
-  0%   {top: 22vh; left: -60vw}
-  100% {top: 15vh; left: 120vw}
+  0%   {top: 22vh; left: -40vw}
+  100% {top: 15vh; left: 140vw}
 }
 
 @keyframes animation3 {
-  0%   {top: 42vh; left: -60vw}
-  100% {top: 35vh; left: 120vw}
+  0%   {top: 42vh; left: -40vw}
+  100% {top: 35vh; left: 140vw}
 }
 
 @keyframes animation4 {
-  0%   {top: 62vh; left: -60vw}
-  100% {top: 55vh; left: 120vw}
+  0%   {top: 62vh; left: -40vw}
+  100% {top: 55vh; left: 140vw}
 }
 
 @keyframes animation5 {
-  0%   {top: 82vh; left: -60vw}
-  100% {top: 75vh; left: 120vw}
+  0%   {top: 82vh; left: -40vw}
+  100% {top: 75vh; left: 140vw}
 }
 
 @keyframes animation6 {
-  0%   {top: 98vh; left: -60vw}
-  100% {top: 91vh; left: 120vw}
+  0%   {top: 98vh; left: -40vw}
+  100% {top: 91vh; left: 140vw}
 }

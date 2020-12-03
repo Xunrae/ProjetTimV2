@@ -83,7 +83,17 @@ function ouvrirFenetre(){
     let para = document.createElement("p");
 
     //va chercher le nom du cours dans son json
-    let contenuNomCours = document.createTextNode(arrayData[noSession][1][codeTarget].NomCours.slice(11,100));
+    let contenuNomCoursBr = document.createTextNode(arrayData[noSession][1][codeTarget].NomCours.slice(11,100));
+
+    //change le node en string
+    let string = contenuNomCoursBr.wholeText;
+    //change les <br> et </br> pour des espaces
+    let stringSansBr = string.replace("<br>"," ");
+    stringSansBr = stringSansBr.replace("</br>"," ");
+
+    //remet le texte corrigé en textNode
+    let contenuNomCours = document.createTextNode(stringSansBr);
+
     //va chercher le code du cours dans son json
     let contenuCodeCours = document.createTextNode(arrayData[noSession][1][codeTarget].NomCours.slice(0,7));
     //va chercher la description du cours dans le contenu json
