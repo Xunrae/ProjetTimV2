@@ -1,4 +1,4 @@
-		<footer id="colophon" class="site-footer">
+		<footer id="colophon" class="site-footer <?php if($page == "index"){echo "accueilFooter";}?>">
 			<div class="site-info">
 				<div class="container">
 					<?php 
