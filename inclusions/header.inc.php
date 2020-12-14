@@ -99,7 +99,7 @@
 						<a href="sites/cheminement.php"><div class="ongletAnimAccueil cube col-2">Cheminement</div></a>
 						<a href="sites/enseignants.php"><div class="ongletAnimAccueil cube col-2">Enseignants</div></a>
 						<a href="sites/projets.php"><div class="ongletAnimAccueil cube col-2">Projets</div></a>
-						<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Événements</div></a>
+						<a href="sites/evenements.php"><div class="ongletAnimAccueil cube col-2">Évènements</div></a>
 					</div>
 				</div>
 			<?php
