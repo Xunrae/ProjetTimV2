@@ -91,6 +91,12 @@ h2 {
     margin-top: 2em;
     justify-content: center;
     align-items: center;
+    //Animations
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+    
+    transition: all 0.2s;
+
     /*p{
         line-height: 0.3em;
     }*/
@@ -100,10 +106,15 @@ h2 {
     }
 
     &:last-child{margin-bottom: 100px;}
+
+    
 }
+
 
 .boutonProf:hover {
     cursor: pointer;
+    filter: hue-rotate(30deg);
+    transform: scale(1.1);
 }
 
 /////////////////////////////////////////////////////////Début media querries

@@ -60,24 +60,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="projet" title="Cliquez pour afficher la description">
-		<video src="../videos/ProjectBeastFootage.mp4" muted autoplay loop preload="auto" ></video>
-		<div class="description">
-			<h2>Développement de Jeu 2D</h2>
-			<p>Réalisé par un étudiant de 1ère année, Project Beast est un platformer 2D dont le but est de tuer les ennemis sans mourir pour arriver à la fin du niveau. La musique est particulièrement FIREEE !!! <br>
-			<span>Auteur : <i>David Céré</i></span>
-			</p>
-		</div>
-	</div>
-	<div class="projet" title="Cliquez pour afficher la description">
-		<video src="../videos/ProjectBeastFootage.mp4" muted autoplay loop preload="auto" ></video>
-		<div class="description">
-			<h2>Développement de Jeu 2D</h2>
-			<p>Réalisé par un étudiant de 1ère année, Project Beast est un platformer 2D dont le but est de tuer les ennemis sans mourir pour arriver à la fin du niveau. La musique est particulièrement FIREEE !!! <br>
-			<span>Auteur : <i>David Céré</i></span>
-			</p>
-		</div>
-	</div>
+	
 </section>
 <?php
 	require("../inclusions/footer.inc.php");
