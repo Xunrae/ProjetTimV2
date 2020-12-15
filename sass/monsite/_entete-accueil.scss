@@ -116,6 +116,9 @@ a:hover{
   background-color:rgba(100,250,100,0.7);
 }
 
+.accueilMain{
+  z-index: -1;
+}
 
 
 /////////////////////////////////////////////////////////Début media queries
@@ -129,9 +132,6 @@ a:hover{
     display: block;
   }
 
-  .accueilMain{
-    z-index: -1;
-  }
   .petit-ecran #boiteABurger {
     position: absolute;
     top: 50px;
