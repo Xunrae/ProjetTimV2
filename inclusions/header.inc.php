@@ -30,7 +30,7 @@
 <html lang="fr-CA">
 <head>
 	<title><?= $headInfo[$page]["title"]?></title>
-
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta charset="UTF-8"/>
 
@@ -39,6 +39,7 @@
 
 	<!-- Si on est sur la page d'accueil les css sont -->
 	<?php if($page=="index") : ?>
+		<link rel="shortcut icon" href="img/LogoFavicon.png" type="image/x-icon">
 		<link href="css/normalize.css"
 				type="text/css"
 				rel="stylesheet">
@@ -48,7 +49,7 @@
 				rel="stylesheet">
 		<!-- Pour toutes les autres pages les css sont -->
 	<?php else : ?>
-
+		<link rel="shortcut icon" href="../img/LogoFavicon.png" type="image/x-icon">
 		<link href="../css/normalize.css"
 				type="text/css"
 				rel="stylesheet">
